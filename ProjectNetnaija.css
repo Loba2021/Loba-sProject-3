@@ -1,0 +1,157 @@
+
+.blacktop{
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    display: none;
+}
+.navbar{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(6, 96, 0);
+}
+.leftnav{
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.navopts{
+    width: 100px;
+    height: 40px;
+    background-color: rgb(6, 96, 0);
+    color: white;
+    border: none;
+}
+.navopts:hover{
+    background-color: white;
+    color: rgb(6, 96, 0);
+}
+.leftfix{
+    width: 50px;
+    height: 100%;
+    background-color: white;
+    padding: 15px;
+    padding-top: 100px;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+} 
+ .cont1{
+    height: 500px; 
+}
+.sect2{
+    position: relative;
+    top: 300px;
+    padding-left: 100px;
+
+}
+.cont2{
+    width: 100%; 
+}
+.options{
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    padding: 10px;
+}
+.line{
+    background-color: rgb(155, 153, 153);
+    margin-top: 0px;
+}
+.tinybox{
+    background-color: rgb(235, 29, 63);
+    height: 20px;
+    width: 20px;
+    border-radius: 4px;
+    /* padding: px; */
+    color: white;
+}
+.redtext{
+    color: rgb(182, 7, 7);
+    margin-bottom: 0px;
+    /* margin-left: 5px; */
+}
+.redtext:hover{
+    color: blue;
+}
+.advertimg{
+    background-color: black;
+    height: 300px;
+    width: 300px;
+    position: relative;
+    left: 50px;
+}
+.sideposts{
+    height: 750px;
+    width: 350px;
+    background-color: white;
+    border-radius: 25px;
+}
+hr{
+    margin: 0px;
+}
+.srch{
+    display: none;
+}
+.txt1{
+    font-size: 500%;
+}
+
+@media all and (max-width: 576px) {
+    body{
+        width: 350px;
+    }
+    .leftfix{
+        display: none;
+    }
+    .navbar{
+        width: 576px;
+    }
+    .leftnav{
+        display: none;
+    }
+    .navopts{
+        display: none;
+    }
+    .cont1{
+        display: inherit;
+        /* width: 100%!important;
+        margin: 0px !important; */
+    }
+    .sect2{
+        height: 700px;
+        margin-top: -200px;
+        padding: 20px;
+        margin-left: 20px;
+        width: 550px;
+    }
+    .options{
+        height: 150px;
+        width: 400px !important;
+        margin-right: 0px !important;
+    }
+    .srch{
+        display: inherit;
+
+    }
+    .menulogo{
+        width: 100% !important;
+        display: flex;
+        justify-content: space-between;
+    }
+    .netlogo{
+        margin-right: 300px;
+    }
+    .rightcon{
+        position: relative;
+        left: 20px;
+        top: 500px;
+    }
+    p{
+        font-size: 20px;
+    }
+    .txt1{
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>~Hone~userlogin</title>
+
+	<!-- Google Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700|Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Custom Stylesheet -->
+	<link rel="stylesheet" href="hone~userlogin.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="../js/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+
+<body id="background">
+	
+	<div class="container1">
+
+		<div class="top">
+			<h1 id="title" class="hidden"><span id="logo">HONE~User</span></h1>
+		</div>
+		<div class="login-box animated fadeInUp">
+			<div class="box-header">
+				<h2>Log In</h2>
+			</div>
+			<label for="username">Username</label>
+			<br/>
+			<input type="text" id="userName">
+			<br/>
+			<label for="password">Password</label>
+			<br/>
+			<input type="password" id="userPassword">
+			<p class="small" id="ErrorCode"></p>
+			<br/>
+			<button type="submit" onclick="GETDATA()">Sign In</button>
+			<br/>
+			<a href="#"><p class="small">Forgot your password?</p></a>
+			<br/>
+			<button type="submit" onclick="createAccount()">CREATE ACCOUNT</button>
+		</div>
+	</div>
+</body>
+
+<script>
+	let body = document.getElementById('background')
+	let email = document.querySelector('#e-mail')
+	let password = document.querySelector('#password')
+	let username = document.querySelector('#username')
+	let loginName = document.querySelector('#userName')
+	let loginPassword = document.querySelector('#userPassword')
+	let addUser = {
+            username: "",
+            email: "",
+            password: ""
+        }
+	function create(data){
+					let email = document.querySelector('#e-mail')
+					let password = document.querySelector('#password')
+					let username = document.querySelector('#username')
+					addUser.email = email.value
+					addUser.password = password.value 
+					addUser.username = username.value
+					console.log(addUser)
+				}
+	function Login(){
+		let loginName = document.querySelector('#userName')
+		let loginPassword = document.querySelector('#userPassword')
+		// $('#background').css({background:'black', color:'white'})
+		background.innerHTML = `
+		<a href="hone~LandingPage.html">
+		<div class="welcomeAddress animate__animated">
+        <h1 class="animate__animated animate__fadeOutUp" style="font-size: 100px;">Welcome~master.hone</h1>
+    	</div>
+	</a>
+		`
+	}
+		// console.log(addUser);
+		async function GETDATA() {
+			fetch('http://localhost:3000/users')
+            .then((response) => response.json())
+            .then((data) => {
+				console.log(data);
+				data.forEach((element, index) => {
+
+					if (loginName.value==element.username && loginPassword.value==element.password) {
+						Login()
+					}else{
+						ErrorCode.innerHTML = 'Incorrect Username or Password'
+					}
+
+					create()
+					data.push(addUser)
+					console.log(data);
+				});
+			})
+		}
+
+	
+
+
+	function createAccount(){
+		body.innerHTML = `
+		<section class="accountSection">
+<span  class="goback" onclick="GoBack"><a href="hone~userlogin.html"><i class="fa fa-arrow-left">Back</i></a></span>
+		<main class="content">
+			<h1>Welcome to ~Hone</h1>
+
+			<div class="inneercon">
+				<p>Sign up with your e-mail</p>
+				<input type="text" class="e-mail" id="e-mail" placeholder="@gmail.com">
+				<p>Enter Username</p>
+				<input type="text" class="e-mail" id="username">
+				<p>Password</p>
+				<input type="password" class="e-mail" id="password" placeholder="Not less than 10 letters">
+				<br>
+			<button type="submit" class="create" onclick="GETDATA()"> CREATE ACCOUNT</button>
+
+			</div>
+		</main>
+	</section>
+		`
+	}
+	
+	$(document).ready(function () {
+    	$('#logo').addClass('animated fadeInDown');
+    	$("input:text:visible:first").focus();
+	});
+	$('#username').focus(function() {
+		$('label[for="username"]').addClass('selected');
+	});
+	$('#username').blur(function() {
+		$('label[for="username"]').removeClass('selected');
+	});
+	$('#password').focus(function() {
+		$('label[for="password"]').addClass('selected');
+	});
+	$('#password').blur(function() {
+		$('label[for="password"]').removeClass('selected');
+	});
+	// GETDATA()
+</script>
+<script src="../js/popper.min.js"></script>
+<script src="../js/latestcompiled.min.js"></script>
+</html>

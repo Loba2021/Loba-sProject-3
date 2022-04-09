@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+}
+body{
+    /* height: 5000px; */
+    font-family: 'Roboto Slab', serif;
+    overflow-x: hidden;
+}
+nav{
+    height: 100px;
+    width: 100%;
+    display: flex !important;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    color: var(--text);
+    background-color: var(--background);
+    --text: white;
+    --text-inverse: white;
+    --background: rgb(45, 25, 18);
+    align-items: center;
+    transition: 0.5s ease-out;
+    box-shadow: 0 3px 20px black;  
+    /* background-image: url(../html&css/con1bck.jpg); */
+}
+.insidenav{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+.navbtns{
+    height: 35px;
+    width: 100px !important;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(45, 25, 18);
+    border-radius: 5px;
+    color: white;
+}
+.navbtns:hover{
+    border: 1px solid rgb(45, 25, 18);
+    background-color: white;
+    color:rgb(45, 25, 18) ;
+}
+.links{
+    color: white;
+    text-decoration: none;
+}
+.links:hover{
+    color: rgb(45, 25, 18) !important;
+}
+main{
+    position: relative;
+    top: 5px;
+}
+.sidediv{
+    /* height: 100vh; */
+    background-color: rgb(199, 182, 164);
+    padding: 30px !important;
+}
+.mediadiv{
+    margin: auto;
+    /* color: rgb(45, 25, 18); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+.profilepic{
+    border-radius: 100%; 
+    width: 100px; 
+    height: 100px; 
+    overflow: hidden;
+    margin: auto;
+    box-shadow: 0 3px 10px black;
+    /* position: relative; */
+    /* left: 120px; */
+    margin-bottom: 20px;
+}
+.bottomleft{
+    margin: 50px;
+    text-align: left;
+}
+textarea{
+    border: none;
+    padding: 20px;
+    outline: none;
+}
+#album{
+    height: 365px;
+    width: 550px;
+    position: fixed;
+    left: 53px;
+    top: 110px;
+    /* background-color: red; */
+}
+.mockup{
+    position: absolute;
+    top: 100px;
+}
+.page{
+    padding: 20px;
+    background-color: rgb(229, 229, 229);
+}
+.micbtn{
+    padding: 10px;
+    border-radius: 50%;
+}
+.micbtn2{
+    padding: 10px;
+    border-radius: 50%;
+    margin-left: 200px !important;
+}
+/* .comment{
+    position: relative;
+    top: 50px;
+} */
+/* .enlarge{
+    transform: scale(1.5);
+    transition: 0.5s ease-out;
+    margin: auto;
+} */
+/* .enlarge #album{
+    transform: scale(1.1);
+} */

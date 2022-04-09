@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="../js/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+    <style>
+        .carbody{
+            width: 100px;
+            height: 100px;
+              }
+        @keyframes dopeshi{
+            from{opacity: 1;
+                 transform: translateX(0px);
+                 background-color: rgb(44, 44, 46);}
+            to{opacity: 1;
+                transform: translateX(900px) scale(1.2);
+                background-color: orange;}  
+        }
+        @keyframes dopeshi2{
+            from{opacity: 1;
+                 transform: translateX(900px);
+                 background-color: rgb(44, 44, 46);}
+            to{opacity: 1;
+                transform: translateX(0px) scale(1.2);
+                background-color: orange;}  
+        }
+        @keyframes dopebck{
+            from{
+                background-color: antiquewhite;  
+            }
+            to{
+                background-color: black;
+            }
+        }
+        .container{
+            height: 50px;
+            width: 100px;
+            background-color: rgb(44, 44, 46);
+            transition: all 1.5s;
+            border-top-right-radius: 50px;
+            animation-name: dopeshi;
+            animation-duration: 3s;
+      
+        }
+        .cartire{
+            height: 40px;
+            width: 40px;
+            background-color: rgb(44, 44, 46);
+            border-radius: 100%;
+            animation-name: dopeshi;
+            animation-duration: 3s;
+      
+        }
+        .tirecon{
+            width: 90px;
+            display: flex;
+            justify-content: space-between;
+            /* position: absolute; */
+            left: 0px;
+        }
+        body{
+            padding: 100px;
+            animation-name: dopebck;
+            animation-duration: 3s;
+        }
+        .roadplatform{
+            height: 15px;
+            width: 100%;
+            background-color: rgb(7, 7, 7);
+            margin-top: -10px;
+            animation-name: platform;
+            animation-duration: 3s;
+        }
+        @keyframes platform{
+            from{opacity: 1;}
+            to{opacity: 0;}
+        }
+        .cartire2{
+            height: 40px;
+            width: 40px;
+            background-color: rgb(44, 44, 46);
+            border-radius: 100%;
+            animation-name: dopeshi2;
+            animation-duration: 3s;
+      
+        }
+        .container2{
+            height: 50px;
+            width: 100px;
+            background-color: rgb(44, 44, 46);
+            transition: all 0.5s;
+            border-top-left-radius: 50px;
+            animation-name: dopeshi2;
+            animation-duration: 3s;
+      
+        }
+        .fastcar{
+            width: 90px;
+            height: 30px;
+            border-top-right-radius: 100%;
+            border-top-left-radius: 40px;
+            background-color: red;
+            animation-name: dopeshi3;
+            animation-duration: 1.5s;
+            animation-delay: 1.5s;
+
+      
+        }
+        .fastcartire{
+            height: 25px;
+            width: 25px;
+            background-color: rgb(8, 8, 8);
+            border-radius: 100%;
+            animation-name: dopeshi3;
+            animation-duration: 1.5s;
+            animation-delay: 1.5s;
+      
+        }
+        .tirecon2{
+            width: 80px;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            left: 0px;
+        }
+        @keyframes dopeshi3{
+            from{opacity: 1;
+                 transform: translateX(0px);
+                 background-color: red;}
+            to{opacity: 1;
+                transform: translateX(900px) scale(1.2);
+                background-color: orange;}  
+        
+        }
+
+    
+    </style>
+</head>
+ <body>
+    <div class="carbody">
+    <div class="container"></div>
+    <div class="tirecon">
+        <div class="cartire"></div>
+        <div class="cartire"></div>
+    </div>
+
+    </div>
+    <div class="roadplatform">
+
+    </div>
+
+<section class="mt-5">
+    <div class="carbody">
+        <div class="container2"></div>
+        <div class="tirecon">
+            <div class="cartire2"></div>
+            <div class="cartire2"></div>
+        </div>
+    
+        </div>
+        <div class="roadplatform">
+        </div>
+</section>
+
+<section class="mt-5">
+<div class="carbody2">
+    <div class="fastcar"></div>
+<div class="tirecon2">
+    <div class="fastcartire"></div>
+<div class="fastcartire"></div>
+</div>
+</div>
+<div class="roadplatform">
+
+</div>
+
+</section>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/latestcompiled.min.js"></script>
+</body>
+</html>

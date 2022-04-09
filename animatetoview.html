@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<style>
+    body{
+        padding: 0;
+        height: 2000px;
+        color: black !important;
+    }
+    nav{
+          display: flex;
+          justify-content: space-around;
+          /* background-color: black; */
+          /* color: white; */
+          width: 100%;
+          height: 70px;
+          position: fixed;
+          top: 0;
+          align-items: center;
+          color: var(--text);
+          background-color: var(--background);
+          --text: white;
+          --background: black;
+          position: fixed;
+          top: 0;
+          border-bottom: 2px solid red;
+      }
+      .nav-scrolled{
+          --text: black;
+          --background: white;
+          --text-inverse: white;
+          font-size: 20px;
+      }
+      section{
+          position: relative;
+          top: 150px;
+          left: 100px;
+          margin-bottom: 150px;
+      }
+      .con1{
+          display: flex;
+          justify-content: space-between;
+          width: 90%;
+          margin-bottom: 50px;
+      }
+      .fadein{
+          /* border: 1px solid black; */
+          padding: 20px;
+          width: 30%;
+          opacity: 0;
+          transition: opacity 400ms ease-in;
+      }
+      .fadein.appear{
+          opacity: 1;
+      }
+      main{
+          background-color: green;
+          width: 100%;
+          height: 800px;
+      }
+      .img{
+          background-color: red;
+          width: 40%;
+          height: 300px;
+          transform: translate(-50%, 50%);
+      }
+      .p{
+        width: 40%;
+          height: 300px;
+          transform: translate(50%, 50%);
+      }
+      .img, .p{
+          transition: transform 400ms ease-in;
+      }
+      .p.appear, .img.appear  {
+          transform: translate(0, 0);
+      }
+      
+
+      /* Parent Container */
+.content_img{
+ position: relative;
+ width: 200px;
+ height: 200px;
+ float: left;
+ /* margin-right: 10px; */
+}
+
+/* Child Text Container */
+.content_img div{
+ position: absolute;
+ bottom: 0;
+ right: 0;
+ left: 0;
+ top: 0;
+ background: linear-gradient(to top, #1f0c05, #4e3f3a, #837872, #bcb5b0, #f9f6f3);
+ color: white;
+ /* margin-bottom: 5px; */
+ font-family: sans-serif;
+ text-align: center;
+ padding-top: 90% !important;
+ opacity: 0;
+ visibility: hidden;
+ -webkit-transition: visibility 0s, opacity 0.5s linear; 
+ transition: visibility 0s, opacity 0.5s linear;
+}
+
+/* Hover on Parent Container */
+.content_img:hover{
+ cursor: pointer;
+}
+
+.content_img:hover div{
+ width: 150px;
+ padding: 10px 25px;
+ visibility: visible;
+ color: white;
+ opacity: 0.7; 
+}
+</style>
+<body>
+    <nav class="navs">
+        <span>Logo</span>
+
+        <div>
+            <a href="">link</a>
+            <a href="">link</a>
+            <a href="">link</a>
+        </div>
+
+        <span>More</span>
+    </nav>
+
+    <main></main>
+
+    <section>
+        <span><h1>About us</h1></span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel pariatur totam repudiandae voluptate aspernatur neque hic doloribus. Anim</p>
+
+        <div class="con1">
+            <div class="fadein">
+                <h1>Hello world</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas fugiat, vitae praesentium debitis reiciendis eligendi et temporibus suscipit quaerat provident cum aperiam. Error optio illo delectus ex atque, cum qui?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate delectus aperiam eum sapiente consequuntur, quaerat sit unde, numquam ducimus dolorum quis, nihil provident eaque autem magni voluptas! Aliquid, rerum atque.
+                </p>
+            </div>
+
+            <div class="fadein">
+                <h1>Hello world</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas fugiat, vitae praesentium debitis reiciendis eligendi et temporibus suscipit quaerat provident cum aperiam. Error optio illo delectus ex atque, cum qui?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate delectus aperiam eum sapiente consequuntur, quaerat sit unde, numquam ducimus dolorum quis, nihil provident eaque autem magni voluptas! Aliquid, rerum atque.
+                </p>
+            </div>
+
+            <div class="fadein">
+                <h1>Hello world</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas fugiat, vitae praesentium debitis reiciendis eligendi et temporibus suscipit quaerat provident cum aperiam. Error optio illo delectus ex atque, cum qui?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate delectus aperiam eum sapiente consequuntur, quaerat sit unde, numquam ducimus dolorum quis, nihil provident eaque autem magni voluptas! Aliquid, rerum atque.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <main></main>
+
+    <section>
+        <div class="con1">
+            <div class="slidein img"></div>
+            <div class="slidein p"><p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut dignissimos aliquid dolores odit, distinctio voluptatum animi voluptates obcaecati nobis quas dolorem fuga recusandae magni eaque ab aperiam vero hic! Nam?
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati laudantium laboriosam, unde culpa in, magni exercitationem ad porro voluptas ex minus pariatur mollitia, optio veniam facilis quam officiis tenetur sequi?
+            </p></div>
+        </div>
+
+        <div class="con1">
+            <div class="slidein img"></div>
+            <div class="slidein p"><p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut dignissimos aliquid dolores odit, distinctio voluptatum animi voluptates obcaecati nobis quas dolorem fuga recusandae magni eaque ab aperiam vero hic! Nam?
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati laudantium laboriosam, unde culpa in, magni exercitationem ad porro voluptas ex minus pariatur mollitia, optio veniam facilis quam officiis tenetur sequi?
+            </p></div>
+        </div>
+    </section>
+    <!-- Image 1 -->
+<div class="content_img">
+    <img src='../vs images.css/bck1.jpg' width='100%' height='100%'>
+    <div><span style="opacity: 1;">Image text1</span style="opacity: 1;"></div>
+   </div>
+   
+   <!-- Image 2 -->
+   <div class="content_img">
+    <img src='../vs images.css/bck2.jpg' width='100%' height='100%'>
+    <div>Image 2 Text</div>
+   </div>
+   
+   <!-- Image 3 -->
+   <div class="content_img">
+    <img src='../vs images.css/bck3.jpg' width='100%' height='100%'>
+    <div>Image 3 Text</div> 
+   </div>
+</body>
+</html>
+
+<script>
+    const faders = document.querySelectorAll('.fadein');
+    const sliders = document.querySelectorAll('.slidein');
+    const appearOptions = { 
+        threshold: 0,
+        rootMargin: "0px 0px -100px 0px"
+    }
+
+    const appearOnScroll = new IntersectionObserver(function(enteries, appearOnScroll){
+        enteries.forEach(entry => {
+            if (!entry.isIntersecting) {
+                return
+            } else{
+                entry.target.classList.add('appear');
+                appearOnScroll.unobserve(entry.target)
+            }
+
+        });
+    }, appearOptions)
+
+    faders.forEach(fader => {
+        appearOnScroll.observe(fader)
+    });
+    sliders.forEach(slider => {
+        appearOnScroll.observe(slider)
+    });
+</script>

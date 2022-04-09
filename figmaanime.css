@@ -1,0 +1,6 @@
+.fignav{
+    display: flex;
+    justify-content: space-around;
+    width: 700px;
+    margin-left: 500px;
+}

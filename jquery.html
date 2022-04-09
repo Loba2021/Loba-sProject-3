@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="../js/jquery.min.js"></script>
+</head>
+<body>
+    <h1 class="merit">Hello World</h1>
+    <input type="password" class="myinput">
+    <button id="btn">Click me</button>
+    <button id="btn2">Toggle me</button>
+    <div class="w-50 d-flex justify-content-around mt-5">
+        <button class="getbtn">Danger</button>
+        <button class="getbtn">Secondary</button>
+        <button class="getbtn">Primary</button>
+        <button class="getbtn">Success</button>
+    </div>
+    <div class="w-50 d-flex justify-content-around mt-5 flex-column">
+        <h1>Header1 <button class="remh1" id="1">1</button></h1>
+        <h1>Header2 <button class="remh1" id="2">2</button></h1>
+        <h1>Header3 <button class="remh1" id="3">3</button></h1>
+        <h1>Header4 <button class="remh1" id="4">4</button></h1>
+    </div>
+    <script>
+        $(function(){
+
+            let count=false
+
+            // $('. or #').val()or .html
+            // console.log($('.merit').attr('id','changed')); attr is used to change the attribute or get id
+            // console.log($('.myinput').attr('type','text'));
+            // $('.myinput').css({background:'black', color:'white'})
+
+            // $('#btn').click(function(){
+            //     $('#btn').addClass('btn btn-info')
+            // })
+            // $('#btn2').click(function(){
+            //     $('#btn2').toggleClass('btn btn-info')
+            // })
+                
+            $('.getbtn').on('click', function(){
+                //$(this).removeClass('btn btn-danger')
+                // if (!count) {
+                //     $(this).prevAll('button').addClass('btn btn-danger')
+                // $(this).nextAll('button').addClass('btn btn-danger')
+                // count=true;
+                // }
+
+                // else
+                // {
+                //     $(this).prevAll('button').removeClass('btn btn-danger')
+                // $(this).nextAll('button').removeClass('btn btn-danger')
+                // count=false;
+                // }
+                
+                let clas = $(this).text();
+                
+                if (clas == 'Danger') {
+                $(this).toggleClass('btn btn-danger')
+                }
+                else if (clas == 'Secondary') {
+                $(this).toggleClass('btn btn-secondary')
+                }
+                else if (clas == 'Primary') {
+                $(this).toggleClass('btn btn-primary')
+                }
+                else if (clas == 'Success') {
+                $(this).toggleClass('btn btn-success')
+                }
+                // $(this).toggleClass('btn btn-info')
+            });
+
+            $('.remh1').on('click', function(){
+                $(this).closest('h1').prev('h1').remove()
+                $(this).closest('h1').nextAll('h1').remove()
+                
+            })
+
+        })
+    </script>
+<script src="../js/popper.min.js"></script>
+<script src="../js/latestcompiled.min.js"></script>
+</body>
+</html>

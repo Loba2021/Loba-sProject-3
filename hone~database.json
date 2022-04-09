@@ -1,0 +1,235 @@
+{
+    "users":[
+        {
+            "username": "master.hone",
+            "e-mail": "honeojii@gmail.com",
+            "password": "goosebumps"
+        }
+    ],
+    "admin":[
+        {
+            "username": "master.hone",
+            "e-mail": "honeojii@gmail.com",
+            "password": "goosebumps",
+            "adminID": ""
+        }
+    ],
+    "books":[
+            {
+                "category": "History",
+                "bookcovers": {
+                    "url1":"../vs images.css/historybook1.jpg",
+                    "url2":"../vs images.css/historybook2.jpg"
+                },
+                "title1":"TORY Warfarer Returns",
+                "title2":"GLASBY'S FORTUNE",
+                "author1":"Stephen R.Sorensen",
+                "author2":"James H.Drescher",
+                "summary":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere placeat sequi unde esse dolor quos perspiciatis enim nisi, rem autem fugiat! Unde, architecto? Laboriosam officiis facilis omnis, quaerat voluptatem totam?",
+                "likes": 50,
+                "price": 300.00,
+                "noOfPages": 200,
+                "chapters": 20
+            },
+            {
+                "category": "Sex",
+                "bookcovers": {
+                    "url1":"../vs images.css/romancebook1.jpg",
+                    "url2":"../vs images.css/romancebook2.jpg"
+                },
+                "title1":"Caught",
+                "title2":"Pages of Darkness~Book 2",
+                "author1":"Christiana J.Micheals",
+                "author2":"Samantha Grosser",
+                "summary":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere placeat sequi unde esse dolor quos perspiciatis enim nisi, rem autem fugiat! Unde, architecto? Laboriosam officiis facilis omnis, quaerat voluptatem totam?",
+                "likes": 50,
+                "price": 300.00,
+                "noOfPages": 200,
+                "chapters": 20
+            },
+            {
+                "category": "Politics",
+                "bookcovers": {
+                    "url1":"../vs images.css/politicbooks1.jpg",
+                    "url2":"../vs images.css/politicbooks2.jpg"
+                },
+                "title1":"The Devil's Dictum",
+                "title2":"The Paris Plot",
+                "author1":"Federick Gero Heimbach",
+                "author2":"Joseph Aragon",
+                "summary":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere placeat sequi unde esse dolor quos perspiciatis enim nisi, rem autem fugiat! Unde, architecto? Laboriosam officiis facilis omnis, quaerat voluptatem totam?",
+                "likes": 50,
+                "price": 300.00,
+                "noOfPages": 200,
+                "chapters": 20
+            },
+            {
+                "category": "Academics & Education",
+                "bookcovers": {
+                    "url1":"../vs images.css/academicbook1.jpg",
+                    "url2":"../vs images.css/academicbook2.jpg"
+                },
+                "title1":"Write Revise Rejoice",
+                "title2":"The King InklingS Author",
+                "author1":"Daniel Raynes",
+                "author2":"James H.Drescher",
+                "summary":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere placeat sequi unde esse dolor quos perspiciatis enim nisi, rem autem fugiat! Unde, architecto? Laboriosam officiis facilis omnis, quaerat voluptatem totam?",
+                "likes": 50,
+                "price": 300.00,
+                "noOfPages": 200,
+                "chapters": 20
+            },
+            {
+                "category": "Science & Technology",
+                "bookcovers": {
+                    "url1":"../vs images.css/sciencebook1.jpg",
+                    "url2":"../vs images.css/sciencebook2.jpg"
+                },
+                "title1":"DATA Science for Executives",
+                "title2":"CHASING KILL",
+                "author1":"Stephen R.Sorensen",
+                "author2":"Brandt Legg",
+                "summary":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere placeat sequi unde esse dolor quos perspiciatis enim nisi, rem autem fugiat! Unde, architecto? Laboriosam officiis facilis omnis, quaerat voluptatem totam?",
+                "likes": 50,
+                "price": 300.00,
+                "noOfPages": 200,
+                "chapters": 20
+            },
+            {
+                "category": "Stories & Fiction",
+                "bookcovers": {
+                    "url1":"../vs images.css/fictionbook1.jpg",
+                    "url2":"../vs images.css/fictionbook3.jpg"
+                },
+                "title1":"Brides and Bones",
+                "author2":"C.E Smithers",
+                "summary":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere placeat sequi unde esse dolor quos perspiciatis enim nisi, rem autem fugiat! Unde, architecto? Laboriosam officiis facilis omnis, quaerat voluptatem totam?",
+                "likes": 50,
+                "price": 300.00,
+                "noOfPages": 200,
+                "chapters": 20
+            },
+        {
+            "..": "Stories & Fiction",
+            "science&technology": "Science & Technology",
+            "academic&education": "Academic & Education",
+            "worldnews": "World~News",
+            "history": "History",
+            "sex": "Sex"
+        }
+    ],
+    "comments":[],
+    "stories&fiction":[
+        {
+            "summary":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere placeat sequi unde esse dolor quos perspiciatis enim nisi, rem autem fugiat! Unde, architecto? Laboriosam officiis facilis omnis, quaerat voluptatem totam?",
+            "likes": 50,
+            "price": 300.00,
+            "noOfPages": 200,
+            "chapters": 20,
+            "title":"Sunsets Never Wait",
+            "author":"Jonathan Cullen",
+            "url":"../vs images.css/fictionbook1.jpg"
+        },
+        {
+            "summary":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere placeat sequi unde esse dolor quos perspiciatis enim nisi, rem autem fugiat! Unde, architecto? Laboriosam officiis facilis omnis, quaerat voluptatem totam?",
+            "likes": 50,
+            "price": 300.00,
+            "noOfPages": 200,
+            "chapters": 20,
+            "author":"Nadia A J Aslhatii",
+            "title":"The Gate Defenders",
+            "url":"../vs images.css/fictionbook3.jpg"
+        },
+        {
+            "summary":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere placeat sequi unde esse dolor quos perspiciatis enim nisi, rem autem fugiat! Unde, architecto? Laboriosam officiis facilis omnis, quaerat voluptatem totam?",
+            "likes": 50,
+            "price": 300.00,
+            "noOfPages": 200,
+            "chapters": 20,
+            "author":"Jeanie Green",
+            "title":"The House Sitter",
+            "url":"../vs images.css/fictionbook2.jpg"
+        },
+        {
+            "summary":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere placeat sequi unde esse dolor quos perspiciatis enim nisi, rem autem fugiat! Unde, architecto? Laboriosam officiis facilis omnis, quaerat voluptatem totam?",
+            "likes": 50,
+            "price": 300.00,
+            "noOfPages": 200,
+            "chapters": 20,
+            "author":"Raffael Rauhenbery",
+            "title":"Die Schulter Des Riessen",
+            "url":"../vs images.css/fictionbook4.jpg"
+        },
+        {
+            "summary":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere placeat sequi unde esse dolor quos perspiciatis enim nisi, rem autem fugiat! Unde, architecto? Laboriosam officiis facilis omnis, quaerat voluptatem totam?",
+            "likes": 50,
+            "price": 300.00,
+            "noOfPages": 200,
+            "chapters": 20,
+            "author":"Oscar Fedal",
+            "title":"SECRETS",
+            "url":"../vs images.css/fictionbook5.jpg"
+        },
+        {
+            "summary":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere placeat sequi unde esse dolor quos perspiciatis enim nisi, rem autem fugiat! Unde, architecto? Laboriosam officiis facilis omnis, quaerat voluptatem totam?",
+            "likes": 50,
+            "price": 300.00,
+            "noOfPages": 200,
+            "chapters": 20,
+            "author":"Eva Lesko Natiello",
+            "title":"Following You",
+            "url":"../vs images.css/fictionbook6.jpg"
+
+        },
+        {
+            "summary":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere placeat sequi unde esse dolor quos perspiciatis enim nisi, rem autem fugiat! Unde, architecto? Laboriosam officiis facilis omnis, quaerat voluptatem totam?",
+            "likes": 50,
+            "price": 300.00,
+            "noOfPages": 200,
+            "chapters": 20,
+            "author":"Angie Walls",
+            "title":"Anywhere But Here",
+            "url":"../vs images.css/fictionbook7.jpg"
+        },
+        {
+            "summary":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere placeat sequi unde esse dolor quos perspiciatis enim nisi, rem autem fugiat! Unde, architecto? Laboriosam officiis facilis omnis, quaerat voluptatem totam?",
+            "likes": 50,
+            "price": 300.00,
+            "noOfPages": 200,
+            "chapters": 20,
+            "author":"Lou Mindar",
+            "title":"the Ones that Got Away",
+            "url":"../vs images.css/fictionbook8.jpg"
+        },
+        {
+            "summary":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere placeat sequi unde esse dolor quos perspiciatis enim nisi, rem autem fugiat! Unde, architecto? Laboriosam officiis facilis omnis, quaerat voluptatem totam?",
+            "likes": 50,
+            "price": 300.00,
+            "noOfPages": 200,
+            "chapters": 20,
+            "author":"Camelia Wheatly",
+            "title":"The House Inside Me",
+            "url":"../vs images.css/fictionbook9.jpg"
+        },
+        {
+            "summary":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere placeat sequi unde esse dolor quos perspiciatis enim nisi, rem autem fugiat! Unde, architecto? Laboriosam officiis facilis omnis, quaerat voluptatem totam?",
+            "likes": 50,
+            "price": 300.00,
+            "noOfPages": 200,
+            "chapters": 20,
+            "author":"Kate Olivieri",
+            "title":"The Quiet Echo",
+            "url":"../vs images.css/fictionbook10.jpg"
+        },
+        {
+            "summary":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere placeat sequi unde esse dolor quos perspiciatis enim nisi, rem autem fugiat! Unde, architecto? Laboriosam officiis facilis omnis, quaerat voluptatem totam?",
+            "likes": 50,
+            "price": 300.00,
+            "noOfPages": 200,
+            "chapters": 20,
+            "author":"C.E Smithers",
+            "title":"Brides and Bones",
+            "url":"../vs images.css/fictionbook11.jpg"
+        }
+    ]
+}

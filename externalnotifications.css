@@ -1,0 +1,830 @@
+body{
+    background-color: black;
+    color: white;
+}
+.searchinp:focus{
+    outline: none;
+    color: white;
+}
+.tap1{
+    width: 230px;
+    border-radius: 50px;
+    height: 65px;
+    padding-top: -5px;
+    margin-top: 5px;
+}
+.tap1:hover{
+    background-color: rgba(30, 30, 31, 0.507);
+}
+.belowhov:hover{
+    background-color: rgba(30, 30, 31, 0.507);
+}
+.middle{
+    border-left: 1px solid white;
+}
+.rig3{
+    background-color: black;
+
+}
+.rig3:hover{
+    background-color: rgb(73, 74, 75);
+    color: white;
+}
+.logger{
+    margin-top: 20px;
+}
+
+.nav-tabs, .nav-tabs .active, .bg{
+    border: none !important;
+    background-color: black;
+}
+.nav-tabs .active{
+    border-bottom: 3px solid rgb(29, 161, 242) !important;
+    background-color: black !important;
+    color: rgb(29, 161, 242)!important;
+}
+.nav-tabs .nav-item{
+    width: 50%;
+    text-align: center;
+}
+.nav-tabs .nav-link{
+    color: whitesmoke
+}
+
+.cam{
+  margin: 95px;
+  margin-top: 150px;
+}
+/* .left{
+    border-right: 1px solid rgb(139, 139, 141);
+    height: 1000px;
+}
+.leftcon{
+    width: 300px; */
+    /* background-color: rgb(192, 131, 51);
+    height: 600px;
+    position: fixed;
+    padding-left: 25px;
+    margin-top: -50px;
+}
+.twitbird{
+    position: relative;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+}
+.rigcon {
+    position: relative;
+    left: 5px;
+    top: 20px;
+    width: 325px;
+    padding: 10px;
+    height: 700px;
+  }
+
+.rig2{
+    background-color: black;
+    color: white;
+    width: 200px;
+}
+.rig2:hover{
+    background-color: rgb(7, 7, 7);
+    color: rgb(29, 161, 242);
+    border-radius: 20px;
+}
+.logger{
+    width: 230px;
+    height: 50px;
+    border-radius: 50px;
+    /* margin-top: 20px; */
+    /* margin-left: 10px;
+    background-color: rgb(23, 162, 184);
+} */
+/*.right{
+    background-color: black;
+    border-left: 1px solid rgb(139, 139, 141);;
+}
+.topper{
+    width: 400px;
+    padding-left: 20px;
+    background-color: black;
+}
+.search{
+    height: 50px;
+    width: 350px;
+    background-color: rgb(32, 35, 39);
+    border-radius: 50px;
+    padding: 10px;
+    padding-left: 20px;
+}
+.colla1{
+    height: 100px;
+    width: 350px;
+    background-color: black;
+    box-shadow: 0px 0px 5px rgb(227, 227, 230);
+    border-radius: 10px;
+    padding: 20px;
+    
+}
+.searchinp{
+    background-color: rgb(32, 35, 39);
+    color: rgb(93, 93, 94);
+    border: none;
+}
+.scon{
+    color: rgb(93, 93, 94);
+}
+.rightcon{
+    height: 600px;
+    width: 350px;
+    background-color: rgb(32, 35, 39);
+    margin: 20px;
+    border-radius: 20px;
+
+}
+.trendtop{
+    width: 330px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+}
+
+.trendcons{
+    padding: 10px;
+    width: 330px;
+    
+}
+.trendcons:hover{
+    background-color: rgba(93, 93, 94, 0.432);
+}
+.rightcon2{
+    height: 400px;
+    width: 350px;
+    background-color: rgb(32, 35, 39);
+    margin: 20px;
+    border-radius: 20px;
+    position: sticky;
+    top: 35px;
+
+
+}
+.follow{
+    width: 85px;
+    border-radius: 30px; 
+    border: 1px solid rgb(167, 165, 165);
+    height: 40px;
+    position: relative;
+    top: -45px;
+    left: 150px;
+}
+.messagesstick{
+    height: 60px;
+    background-color: black;
+    width: 385px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    box-shadow: 0px 0px 10px rgb(227, 227, 230);
+    margin-left: 20px;
+    position: fixed;
+    top: 600px;
+    left: 900px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+.replies{
+    height: 400px;
+    width: 500px;
+    border: 1px solid white;
+    border-radius: 20px;
+    position: relative;
+    left: 55px;
+    overflow: hidden;
+}
+.rig1:hover{
+    background-color: black;
+    color: rgb(29, 161, 242);
+}
+
+.restop{
+    display: none;
+     background-color: black;
+    width: 310px;
+    padding: 10px;
+    position: fixed;
+    top: 0px;
+}
+nav .nav-tabs{
+    display: none;
+}
+.restdown{
+    display: none;
+}
+.feather{
+    display: none;
+} */
+
+/* @media all and (max-width: 768px) and (min-width: 520px) {
+    .restop{
+        display: inherit;
+        display: flex;
+    justify-content: space-between;
+     }
+     .rigcon {
+        position: relative;
+        left: 5px;
+        top: 20px;
+        width: 25px ;
+        padding: 10px;
+        height: 700px;
+      }
+     
+    .rig2{
+        background-color: black;
+        color: white;
+        width: 150px;
+    }
+     .leftcon{
+        width: 40px;
+        background-color: rgb(192, 131, 51);
+        height: 600px;
+        position: fixed;
+        padding-left: 25px;
+        margin-top: -50px;
+    }
+    .left{
+        display: none;
+        width: 40px;
+    }
+    .ta1{
+        display: none;
+    }
+    .ta2{
+        display: none;
+    }
+    .right{
+        display: none;
+    }
+    .ta3{
+        display: none;
+    }
+    .replies{
+        height: 200px;
+    width: 230px;
+    border-radius: 10px;
+    position: relative;
+    left: 55px;
+    overflow: hidden;
+    }
+    
+   
+    .nav-tabs, .nav-tabs .active, .bg{
+        border: none !important;
+        background-color: black;
+    }
+    .nav-tabs .active{
+        border-bottom: 3px solid rgb(8, 250, 169) !important;
+        background-color: black!important;
+        color:  rgb(29, 161, 242)!important;
+    }
+    .nav-tabs .nav-item{
+        width: 25%;
+        text-align: center;
+    }
+    .nav-tabs .nav-link{
+        color: whitesmoke
+    }
+    .restdown{
+        display: inherit;
+        position: fixed;
+        bottom: 5px;
+        width: 305px;
+        height: 60px;
+        padding: 0px;
+    }
+    .repim{
+        width: 250px;
+    }
+    p{
+        font-size: 12px;
+    }
+    .feather{
+        display: inherit;
+        border-radius: 50px;
+        height: 55px;
+        width: 55px;
+        background-color: rgb(29, 161, 242);
+        padding: 12px;
+        padding-top: 14px;
+        position: fixed;
+        top: 420px;
+        left: 220px;
+    }
+} */
+
+@media  (max-width: 576px)  {
+    body{
+        width: 320px;
+    }
+    .nav-tabs .nav-item{
+        width: 50%;
+        text-align: center;
+        margin: auto;
+    }
+    .restop{
+        display: inherit;
+        display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    position: fixed;
+    top: 1px;
+    padding-top: 10px;
+     }
+    .left{
+        display: none;
+        width: 40px;
+    }
+    .ta1{
+        display: none;
+    }
+    .ta2{
+        display: none;
+    }
+    .right{
+        display: none;
+    }
+    .ta3{
+        display: none;
+    }
+    .replies{
+        height: 200px;
+    width: 230px;
+    border: 1px solid rgb(178, 179, 180);
+    border-radius: 10px;
+    position: relative;
+    left: 55px;
+    overflow: hidden;
+    }
+    
+   
+    .nav-tabs, .nav-tabs .active, .bg{
+        border: none !important;
+        background-color: black;
+    }
+    .nav-tabs .active{
+        border-bottom: 3px solid black ;
+        background-color: black!important;
+        color:  rgb(29, 161, 242)!important;
+    }
+    .nav-tabs .nav-item{
+        width: 25%;
+        text-align: center;
+    }
+    .nav-tabs .nav-link{
+        color: whitesmoke
+    }
+    .restdown{
+        display: inherit;
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+        height: 70px;
+        padding: 0px;
+    }
+    .repim{
+        width: 250px;
+    }
+    p{
+        font-size: 12px;
+    }
+    .feather{
+        display: inherit;
+        border-radius: 50px;
+        height: 55px;
+        width: 55px;
+        background-color: rgb(29, 161, 242);
+        padding: 12px;
+        padding-top: 14px;
+        position: fixed;
+        top: 490px;
+        left: 270px;
+    }
+} 
+
+
+
+@media all and (max-width: 768px) and (min-width: 576px) {
+  body
+    .rig2{
+        background-color: black;
+        color: white;
+        width: 150px;
+    }
+    .feather{
+        display: none;
+    }
+    .restdown{
+        display: none;
+    }
+    .restop{
+        display: none;
+    }
+
+    .leftcon{
+        width: 200px;
+        /* background-color: rgb(192, 131, 51); */
+        height: 600px;
+        position: fixed;
+        top: 50px;
+        padding-left: 25px;
+        margin-top: -50px;
+        border-right: 1px solid rgb(139, 139, 141);
+
+    }
+    .left{
+        height: 1000px;
+    }
+}
+@media all and (max-width: 992px) and (min-width: 768px) {
+
+    .rig2{
+        background-color: black;
+        color: white;
+        width: 150px;
+    }
+    .feather{
+        display: none;
+    }
+    .restdown{
+        display: none;
+    }
+    .restop{
+        display: none;
+    }
+
+    .leftcon{
+        width: 200px;
+        /* background-color: rgb(192, 131, 51); */
+        height: 600px;
+        position: fixed;
+        top: 50px;
+        padding-left: 25px;
+        margin-top: -50px;
+        border-right: 1px solid rgb(139, 139, 141);
+
+    }
+    .left{
+        height: 1000px;
+    }
+}
+
+@media all and (max-width: 1126px) and (min-width: 992px) {
+
+    .left{
+        border-right: 1px solid rgb(139, 139, 141);
+        height: 1000px;
+    }
+    .leftcon{
+        width: 300px;
+        /* background-color: rgb(192, 131, 51); */
+        height: 600px;
+        position: fixed;
+        padding-left: 25px;
+        margin-top: -50px;
+    }
+    .twitbird{
+        position: relative;
+        top: 20px;
+        left: 20px;
+        width: 50px;
+    }
+    .rigcon {
+        position: relative;
+        left: 5px;
+        top: 20px;
+        width: 325px;
+        padding: 10px;
+        height: 700px;
+      }
+    
+    .rig2{
+        background-color: black;
+        color: white;
+        width: 200px;
+    }
+    .rig2:hover{
+        background-color: rgb(7, 7, 7);
+        color: rgb(29, 161, 242);
+        border-radius: 20px;
+    }
+    .logger{
+        width: 230px;
+        height: 50px;
+        border-radius: 50px;
+        /* margin-top: 20px; */
+        margin-left: 10px;
+        background-color: rgb(23, 162, 184);
+    }
+    .right{
+        background-color: black;
+        border-left: 1px solid rgb(139, 139, 141);;
+    }
+    .topper{
+        width: 400px;
+        padding-left: 20px;
+        background-color: black;
+    }
+    .search{
+        height: 50px;
+        width: 350px;
+        background-color: rgb(32, 35, 39);
+        border-radius: 50px;
+        padding: 10px;
+        padding-left: 20px;
+    }
+    .colla1{
+        height: 100px;
+        width: 350px;
+        background-color: black;
+        box-shadow: 0px 0px 5px rgb(227, 227, 230);
+        border-radius: 10px;
+        padding: 20px;
+        
+    }
+    .searchinp{
+        background-color: rgb(32, 35, 39);
+        color: rgb(93, 93, 94);
+        border: none;
+    }
+    .scon{
+        color: rgb(93, 93, 94);
+    }
+    .rightcon{
+        height: 600px;
+        width: 350px;
+        background-color: rgb(32, 35, 39);
+        margin: 20px;
+        border-radius: 20px;
+    
+    }
+    .trendtop{
+        width: 330px;
+        padding-top: 15px;
+        padding-bottom: 5px;
+        padding-left: 20px;
+    }
+    
+    .trendcons{
+        padding: 10px;
+        width: 330px;
+        
+    }
+    .trendcons:hover{
+        background-color: rgba(93, 93, 94, 0.432);
+    }
+    .rightcon2{
+        height: 400px;
+        width: 350px;
+        background-color: rgb(32, 35, 39);
+        margin: 20px;
+        border-radius: 20px;
+        position: sticky;
+        top: 35px;
+    
+    
+    }
+    .follow{
+        width: 85px;
+        border-radius: 30px; 
+        border: 1px solid rgb(167, 165, 165);
+        height: 40px;
+        position: relative;
+        top: -45px;
+        left: 150px;
+    }
+    .messagesstick{
+        height: 60px;
+        background-color: black;
+        width: 385px;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        box-shadow: 0px 0px 10px rgb(227, 227, 230);
+        margin-left: 20px;
+        position: fixed;
+        top: 600px;
+        right: -30px;
+        display: flex;
+        justify-content: space-around;
+        padding-top: 10px;
+    }
+    .replies{
+        height: 400px;
+        width: 500px;
+        border: 1px solid white;
+        border-radius: 20px;
+        position: relative;
+        left: 55px;
+        overflow: hidden;
+    }
+    .rig1:hover{
+        background-color: black;
+        color: rgb(29, 161, 242);
+    }
+    
+    .restop{
+        display: none;
+         background-color: black;
+        width: 310px;
+        padding: 10px;
+        position: fixed;
+        top: 0px;
+    }
+    nav .nav-tabs{
+        display: none;
+    }
+    .restdown{
+        display: none;
+    }
+    .feather{
+        display: none;
+    }
+    .logger{
+        margin-left: -15px;
+    }
+    
+}
+
+@media (min-width: 1126px) {
+    
+    .left{
+        border-right: 1px solid rgb(139, 139, 141);
+        height: 1000px;
+    }
+    .leftcon{
+        width: 300px;
+        /* background-color: rgb(192, 131, 51); */
+        height: 600px;
+        position: fixed;
+        padding-left: 25px;
+        margin-top: -50px;
+    }
+    .twitbird{
+        position: relative;
+        top: 20px;
+        left: 20px;
+        width: 50px;
+    }
+    .rigcon {
+        position: relative;
+        left: 5px;
+        top: 20px;
+        width: 325px;
+        padding: 10px;
+        height: 700px;
+      }
+    
+    .rig2{
+        background-color: black;
+        color: white;
+        width: 200px;
+    }
+    .rig2:hover{
+        background-color: rgb(7, 7, 7);
+        color: rgb(29, 161, 242);
+        border-radius: 20px;
+    }
+    .logger{
+        width: 230px;
+        height: 50px;
+        border-radius: 50px;
+        /* margin-top: 20px; */
+        margin-left: 10px;
+        background-color: rgb(23, 162, 184);
+    }
+    .right{
+        background-color: black;
+        border-left: 1px solid rgb(139, 139, 141);;
+    }
+    .topper{
+        width: 400px;
+        padding-left: 20px;
+        background-color: black;
+    }
+    .search{
+        height: 50px;
+        width: 350px;
+        background-color: rgb(32, 35, 39);
+        border-radius: 50px;
+        padding: 10px;
+        padding-left: 20px;
+    }
+    .colla1{
+        height: 100px;
+        width: 350px;
+        background-color: black;
+        box-shadow: 0px 0px 5px rgb(227, 227, 230);
+        border-radius: 10px;
+        padding: 20px;
+        
+    }
+    .searchinp{
+        background-color: rgb(32, 35, 39);
+        color: rgb(93, 93, 94);
+        border: none;
+    }
+    .scon{
+        color: rgb(93, 93, 94);
+    }
+    .rightcon{
+        height: 600px;
+        width: 350px;
+        background-color: rgb(32, 35, 39);
+        margin: 20px;
+        border-radius: 20px;
+    
+    }
+    .trendtop{
+        width: 330px;
+        padding-top: 15px;
+        padding-bottom: 5px;
+        padding-left: 20px;
+    }
+    
+    .trendcons{
+        padding: 10px;
+        width: 330px;
+        
+    }
+    .trendcons:hover{
+        background-color: rgba(93, 93, 94, 0.432);
+    }
+    .rightcon2{
+        height: 400px;
+        width: 350px;
+        background-color: rgb(32, 35, 39);
+        margin: 20px;
+        border-radius: 20px;
+        position: sticky;
+        top: 35px;
+    
+    
+    }
+    .follow{
+        width: 85px;
+        border-radius: 30px; 
+        border: 1px solid rgb(167, 165, 165);
+        height: 40px;
+        position: relative;
+        top: -45px;
+        left: 150px;
+    }
+    .messagesstick{
+        height: 60px;
+        background-color: black;
+        width: 385px;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        box-shadow: 0px 0px 10px rgb(227, 227, 230);
+        margin-left: 20px;
+        position: fixed;
+        top: 600px;
+        right: 45px;
+        display: flex;
+        justify-content: space-around;
+        padding-top: 10px;
+    }
+    .replies{
+        height: 400px;
+        width: 500px;
+        border: 1px solid white;
+        border-radius: 20px;
+        position: relative;
+        left: 55px;
+        overflow: hidden;
+    }
+    .rig1:hover{
+        background-color: black;
+        color: rgb(29, 161, 242);
+    }
+    
+    .restop{
+        display: none;
+         background-color: black;
+        width: 310px;
+        padding: 10px;
+        position: fixed;
+        top: 0px;
+    }
+    nav .nav-tabs{
+        display: none;
+    }
+    .restdown{
+        display: none;
+    }
+    .feather{
+        display: none;
+    }
+    
+}

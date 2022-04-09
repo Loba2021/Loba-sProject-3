@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="../js/jquery.min.js"></script>
+    <style>
+        .lala{
+            background-color: red;
+            color: lightyellow;
+            width: 150px ;
+            position: relative;
+            left: 600px;
+        }
+        h1{
+            font-size: 100px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="bg-dark">
+    <h1 id="num" class="text-info">Hey</h1>
+    <!-- <button class="lala" onclick="document.getElementById('num').innerText= numb++">Alert</button> -->
+    <!-- <button class="class" onclick="document.getElementById('num').innerText= numb--">lolz</button> -->
+
+    <!-- <input type="text" id="no1">
+    <input type="text" id="no2">
+    <input type="text" id="no3"> -->
+
+    <div class="p-5">
+        <div class="card bg-white m-5 p-5">
+            <div class="text-center text-danger">
+                <h1 id="title">Oya you can look now <span class="text-success">:)</span></h1>
+            </div>
+            <div>
+                <input type="text" id="userInput" class="form-control mb-3">
+                <button class="form-control text-light btn btn-primary" onclick="recieve()">Enter</button>
+                <button class="form-control text-light btn btn-success mt-3" onclick="fullcontrol()">Display</button>
+                <div id="disp" class="form-control bg-dark text-center text-light mt-5" ></div>
+
+                <button class="form-control text-light btn btn-secondary mt-3" onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>
+                <button class="form-control text-light btn btn-primary mt-3" onclick="Clickme()">Click me</button>
+                <p id="demo"></p>
+
+                <input type="text" id="userInput2" onkeyup="fullcontrol2()" class="form-control mb-3 mt-3">
+                <!-- <button class="form-control text-light btn btn-success mt-3" onclick="fullcontrol2()">Get</button> -->
+                <input type="text" id="disp2" class="form-control mb-3 mt-3">
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        function Clickme(){
+            alert('Hello World!')
+        }
+        var UserInp2
+        function fullcontrol2(){
+            UserInp2= document.getElementById('userInput2').value;
+            // console.log('Here is what i typed...' + UserInp2);
+            document.getElementById('disp2').value=UserInp2;
+            // console.log(UserInp2)
+        }
+        fullcontrol2()
+        
+        var UserInp;
+        // console.log('Here is what he typed'+ UserInp);
+    
+        function recieve(){
+        UserInp= document.getElementById('userInput').value;
+        // console.log('Here is what he typed ' + UserInp);
+        }
+
+        function show(){
+        console.log('Here is what he typed ' + UserInp);
+        document.getElementById('disp').innerHTML +=  UserInp + '<br>';  
+        console.log(UserInp)
+        }
+        function fullcontrol(){
+            recieve();
+            show();
+        }
+
+        function calc(one, two, opera){
+            if (opera=='+'){
+                console.log(one+two);
+            }
+            else if (opera=='-'){
+                console.log(one-two);
+            }
+            else if (opera=='/'){
+                console.log(one/two);
+            }
+            else if (opera=='*'){
+                console.log(one*two);
+            }
+            else{
+                console.log('invalid input')
+            }
+        }
+        calc(20, 10, '+');
+    //    let a= document.getElementById('no1').value=100;
+    //    let b= document.getElementById('no2').value=100;
+    //    let c= document.getElementById('no3');
+    //    c.value= parseInt(a)+ parseInt(b)
+        let object = {
+            name: 'loba', level: 2, phoneNo: '07052895400', resumYr: 2016, presentYr: 2021,
+            yrOfXp(){
+                var yrXp = this.presentYr - this.resumYr;
+                return yrXp;
+            }
+        }
+        var response = object.yrOfXp();
+        console.log(response)
+
+        // console.log(object.phoneNo)
+        // or
+        // console.log(object['level'])
+
+        let weedfarm = {
+            product: 'colorado', quality: 'very stong something', quantityOdered: 5, unitprice: 300000,
+            totalprice(){
+                var amt = this.unitprice * this.quantityOdered;
+                return amt;
+            }
+        }
+        var receipt = weedfarm.totalprice();
+        console.log(receipt)
+
+        function person(name,gender,age,height,color,presentYr,method){
+            this.name = name;
+            this.gender = gender;
+            this.age = age;
+            this.height = height;
+            this.color = color;
+            this.presentYr = presentYr;
+            this.method = presentYr - age;
+        } 
+        // method(){
+        //         var mtd = this.height - this.age;
+        //         return mtd;
+        //     }
+        var John = new person('John','male',24,100,'black',2021);
+        // console.log(John)
+       var Dele = new person('Dele','male',35,100,'black',2021);
+       console.log(Dele);
+        </script>
+         <!-- document.write("jsworking")
+         var lobadev= document.getElementsById("loba")
+         console.log(lobadev)
+         var john= document.getElementById("loba")
+         console.log(john)
+
+         var name= "jhon loba"
+         console.log(
+        typeof name
+         );
+         let homeAddress='house 50, uch, ibadan';
+         console.log(homeAddress)
+         let b=2;
+         b++;
+         ++b;
+
+         console.log(b++)
+
+         let a=5;
+         let b=10;
+
+
+        
+         let c=a+b;
+         ++c;
+         ++a
+        console. log(c)
+
+
+       let Today='Monday';
+         if(Today=='Monday'){
+             console.log('Today is = Monday')
+         }
+         else if(Today=='Tuesday'){
+             console.log('Today is == Tuesday')
+         }
+         else if(Today=='Wednessday'){
+             console.log('Today is == Wednessday')
+         }
+         else if(Today=='Thursday'){
+             console.log('Today is == Thursday')
+         }
+         else{
+             console.log('Today is == Nooday')
+         }
+
+         let No1;;
+         let No2=4;
+
+         if(Sol=='+'){
+             console.log(No1+No2)
+         }
+         else if(Sol=='-'){
+             console.log(No1-No2)
+         }
+         else if(Sol=='*'){
+             console.log(No1*No2)
+         }
+         else if(Sol=='/'){
+             console.log(No1/No2)
+         }
+         else{
+             console.log('No answer given')
+       } -->
+       <script src="../js/popper.min.js"></script>
+       <script src="../js/latestcompiled.min.js"></script>     
+</body>
+</html>

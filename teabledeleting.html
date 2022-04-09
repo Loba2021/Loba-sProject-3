@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deleter</title>
+    <style>
+        /* tr,
+        td{
+            border: 2px solid black;
+        } */
+    </style>
+</head>
+<body>
+    <table id="tableDisplay" style="border: 2px solid black;"   ></table>
+</body>
+
+<script>
+    let dispTable = document.getElementById('tableDisplay')
+    let tableContent = [
+    {name:'Loba', sex:'M', age:'19'},
+    {name:'Tolu', sex:'M', age:'29'},
+    {name:'Temi', sex:'F', age:'90'},
+    {name:'Fikayo', sex:'M', age:'55'},
+    {name:'Fayo', sex:'F', age:'23'}
+    ]
+    function del(params) {
+        tableContent.splice(params,1);
+        dispTable.innerHTML = '';
+        display();
+    }
+    display()
+   function display(){
+    for (let index = 0; index < tableContent.length; index++) {
+        dispTable.innerHTML +=`
+        <tr style="border: 2px solid black;">
+            <td style="border: 2px solid black;"> ${tableContent[index].name}</td>
+            <td style="border: 2px solid black;"> ${tableContent[index].sex}</td>
+            <td style="border: 2px solid black;"> ${tableContent[index].age}</td>
+            <td style="border: 2px solid black;"><button onclick="del(${index})">Delete</button></td>
+        </tr>`
+}
+   }
+    
+
+console.log(tableContent[0].name)
+</script>
+</html>

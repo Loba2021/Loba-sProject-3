@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="../js/jquery.min.js"></script>
+</head>
+<body class="bg-success">
+    <!-- <h1 id="count">1</h1>
+    <button id="decre" onclick="decrease()">Decr click</button>
+    <button id="incre" onclick="increase()">Inc click</button> -->
+        
+    <div class=" card bg-light w-50 container-fluid mt-5" 
+        <h1 class="text-center mb-5">Questions run from 1-10</h1>
+        <!-- <div>
+            <p> <span>1.</span> <i>Fill in the blank spaces in the following sentences making use of the best of the five option:</i>
+                The telephone .... in the nineteenth century and is now used in most countries in the world</p>
+                <input type="radio" name="gender">A<span class="ml-2">had been invented</span></input><br>
+                <input type="radio" name="gender">B<span class="ml-2">was invented</span></input><br>
+                <input type="radio" name="gender">C<span class="ml-2">would have been invented</span></input><br>
+                <input type="radio" name="gender">D<span class="ml-2">has been invented</span></input><br>
+                <input type="radio" name="gender">D<span class="ml-2">was being invented</span></input>
+                
+        </div> -->
+        <div id="displayQ"></div>
+        <div class="d-flex justify-content-between p-3">
+            <button class="btn btn-outline-info" id="prev" onclick="prevnum()"><</button>
+            <button class="btn btn-outline-info" id="next" onclick="nextnum()">></button>
+        </div>
+        <div style="font-size: 30px; text-align: center;" id="quenum">1</div>
+    </div>
+
+<script src="../js/popper.min.js"></script>
+<script src="../js/latestcompiled.min.js"></script>
+</body>
+</html>
+
+
+<script>
+    // let numb = Number(document.getElementById('count').innerHTML)
+    
+    // function increase() {
+    //     // console.log(numb);
+    //     document.getElementById('count').innerHTML = ++numb
+    //     if(numb>=1){
+    //         document.getElementById('decre').removeAttribute('disabled');
+    //     }
+    //     // console.log(numb++);
+    // }
+    // function decrease() {
+       
+    //     document.getElementById('count').innerHTML = --numb;
+    //     console.log(numb);
+    //     if(document.getElementById('count').innerHTML==1){
+    //         document.getElementById('decre').setAttribute('disabled', true)
+    //     }
+
+        // console.log(numb--);
+        // if (document.getElementById('count').innerHTML <= 0) {
+        // }
+        // else(
+        //     document.getElementById('decre').setAttribute('disabled', false)
+        // )
+    //}
+    let Questions = [
+        {q1:`<div>
+            <p> <span>1.</span> <i>Fill in the blank spaces in the following sentences making use of the best of the five option:</i>
+                The telephone .... in the nineteenth century and is now used in most countries in the world</p>
+                <input type="radio" name="gender">A<span class="ml-2">had been invented</span></input><br>
+                <input type="radio" name="gender">B<span class="ml-2">was invented</span></input><br>
+                <input type="radio" name="gender">C<span class="ml-2">would have been invented</span></input><br>
+                <input type="radio" name="gender">D<span class="ml-2">has been invented</span></input><br>
+                <input type="radio" name="gender">D<span class="ml-2">was being invented</span></input>
+                
+        </div>`},
+        {q2:`<div>
+            <p> <span>1.</span> <i>Fill in the blank spaces in the following sentences making use of the best of the five option:</i>
+                The telephone .... in the nineteenth century and is now used in most countries in the world222222222222222222222</p>
+                <input type="radio" name="gender">A<span class="ml-2">had been invented</span></input><br>
+                <input type="radio" name="gender">B<span class="ml-2">was invented</span></input><br>
+                <input type="radio" name="gender">C<span class="ml-2">would have been invented</span></input><br>
+                <input type="radio" name="gender">D<span class="ml-2">has been invented</span></input><br>
+                <input type="radio" name="gender">D<span class="ml-2">was being invented</span></input>
+                
+        </div>`},
+        {q3:`<div>
+            <p> <span>1.</span> <i>Fill in the blank spaces in the following sentences making use of the best of the five option:</i>
+                The telephone .... in the nineteenth century and is now used in most countries in the world333333333333333333</p>
+                <input type="radio" name="gender">A<span class="ml-2">had been invented</span></input><br>
+                <input type="radio" name="gender">B<span class="ml-2">was invented</span></input><br>
+                <input type="radio" name="gender">C<span class="ml-2">would have been invented</span></input><br>
+                <input type="radio" name="gender">D<span class="ml-2">has been invented</span></input><br>
+                <input type="radio" name="gender">D<span class="ml-2">was being invented</span></input>
+                
+        </div>`}
+    ]
+    let numb2 = document.getElementById('displayQ')
+    numb2.innerHTML = Questions[0].q1
+
+    function nextnum(){
+        let index
+        for (index = 0; index < Questions.length; index++) {
+        let questNum = [0, 1, 2, 3, 4]
+        numb2.innerHTML = Questions[1].q2
+        }
+
+    // Questions[index] = questNum[index]
+ console.log(index)
+ 
+    }
+
+    
+
+
+    // function prevnum() {
+    //     if (numb2==1) {
+    //         // console.log('yes');
+    //         document.getElementById('prev').setAttribute('disabled', true)
+    //         return   
+    //     }
+    //     document.getElementById('quenum').innerHTML = --numb2;
+
+        
+    //     if (numb2>1 && numb2<10) {
+    //         // console.log('true');
+    //         document.getElementById('next').removeAttribute('disabled')
+    //     }
+
+    // }
+    // function nextnum() {
+    //     document.getElementById('quenum').innerHTML = ++numb2;
+    //     if (numb2>=10) {
+    //         document.getElementById('next').setAttribute('disabled', true)
+    //     }
+    //     if (numb2<=1 && numb2==10) {
+    //         document.getElementById('prev').removeAttribute('disabled', true)
+    //     }
+    // }
+</script>

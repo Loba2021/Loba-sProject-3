@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="../js/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+</head>
+<style>
+    body {
+        background-color: rgb(255, 255, 255);
+    }
+
+    .first {
+        text-align: center;
+        font-family: verdana;
+        color: rgb(3, 27, 78);
+    }
+
+    .txta {
+        font-weight: 1000;
+        font-size: 25px;
+    }
+
+    .sec {
+        
+        font-family: verdana;
+        color: rgb(3, 27, 78);
+       
+    }
+
+    .link {
+        text-decoration: none;
+        color: blue;
+    }
+
+    .third {
+        display: flex;
+       justify-content: space-between;
+        margin-top: 100px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 50px;
+       
+    }
+    /* main {
+            flex-direction: row;
+        } */
+        nav{
+        border-bottom: 2px solid rgb(0, 95, 255);
+        display: flex;
+        justify-content: space-around;
+        background-color: white;
+        height: 100px;
+        /* position: absolute; */
+    }
+    .img1{
+        height: 35px;
+        width: 200px;
+        margin-top: 30px;
+
+    }
+    a{
+        margin-top: 45px;
+        text-decoration: none;
+        color: rgb(0, 95, 255);
+    }
+    .butt1{
+        height: 30px;
+        width: 70px;
+        background-color: rgb(0, 95, 255);
+        border-radius: 10px;
+        color: white;
+        border: 1px solid rgb(0, 95, 255);
+    }
+    .butt2{
+        height: 30px;
+        width: 70px;
+        background-color: white;
+        border-radius: 10px;
+        color: rgb(0, 95, 255);
+        border: 1px solid rgb(0, 95, 255);
+        /* margin-top: 50px; */
+
+    }
+    .butt4 {
+        height: 50px;
+        width: 320px;
+        background-color: rgb(0, 95, 255);
+        border-radius: 3px;
+        color: white;
+        border: 1px solid rgb(0, 95, 255);
+        margin-top: 50px;
+        margin-left: 30px;
+    }
+    .butt3{
+        height: 40px;
+        width: 250px;
+        background-color: white;
+        border-radius: 5px;
+        color: rgb(0, 95, 255);
+        border: 1px solid rgb(0, 95, 255);
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+    .butt5{
+        height: 25px;
+        width: 70px;
+        background-color: white;
+        border-radius: 4px;
+        color: rgb(0, 95, 255);
+        border: 1px solid rgb(0, 95, 255);
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+    .m1{
+        background-color: rgb(0, 95, 255);
+        margin: 0, 0, 0, 0;
+        height: 800px;
+    }
+    .d2{
+        width: 600px;
+        height: 500px;
+        
+        margin-left: 100px;
+
+
+    }
+    .wel{
+        color: white;
+        font-family: Helvetica;
+        font-size: 50px;
+    }
+    .para1{
+        color: white;
+        font-family: Helvetica;
+        font-size: 25px;
+        word-spacing: 10px;
+        /* font-weight: 2%; */
+
+    }
+    .fish{
+        margin-left: 100px;
+        margin-top: 50px;
+    }
+    .d4{
+        background-color: white;
+        width: 400px;
+        height: 500px;
+        border-radius: 10px;
+        position: absolute;
+        top: 200px;
+        left: 830px;
+    }
+    .inputs{
+        border: 2px solid rgb(138, 136, 136);
+        border-radius: 5px;
+        background-color: white;
+        color: rgb(0, 95, 255);
+        width: 300px;
+        height: 30px;
+        padding: 10px;
+        margin-left: 30px;
+        margin-top: 10px;   
+    }
+    h3{
+        color: rgb(115, 138, 165);
+        font-family: verdana;
+        text-align: center;
+        margin-top: 70px;
+    }
+.d5{
+    display: flex;
+    justify-content: space-around;
+}
+.streaming{
+     text-align: center;
+}
+.website{
+    text-align: center;
+}
+.inp2{
+    border: 2px solid rgb(138, 136, 136);
+        border-radius: 5px;
+        background-color: white;
+        color: rgb(0, 95, 255);
+        width: 200px;
+        height: 50px;
+        padding: 10px;
+        margin-left: 50px;
+        margin-top: 10px;   
+}
+.flexernav{
+    display: flex;
+    justify-content: space-between;
+    width: 1300px;
+    margin-top: -30px;
+}
+
+    @media(max-width: 600px) {
+         body{
+            width: 400px;
+        }
+        .m1{
+            width: 360px;
+            height: 500px;
+            /* margin: 20px; */
+        }
+        h3{
+            font-size: 15px;
+            width: 360px;
+            text-align: center;
+            padding-left: -10px;
+        }
+        .d3{
+            padding: 50px;
+            width: 400px;
+            position: relative;
+            left: -60px;
+            top: 20px;
+        }
+        .d2{
+            margin: 20px;
+            font-size: 10px;
+            width: 300px;
+
+        }
+        .para1{
+            font-size: 15px;
+            width: 300px;
+            text-align: center;
+        }
+        .wel{
+            font-size: 20px;
+        }
+        .first{
+            margin-left: 300px;
+        }
+        .flexernav{
+            display: none;
+        }
+        .overlay{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            background-color: rgba(85, 82, 82, 0.781);
+            height: 800px;
+            width: 370px;
+        }
+        .d4{
+            position: absolute;
+            top: 50px;
+            left: 7px;
+            width: 300px;
+        }
+        .first{
+            margin-left: 10px;
+        }
+    }
+    
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-md bg-light navbar-light">
+
+      <div   data-toggle="modal" data-target="#myModal">
+        <button class="navbar-toggler" type="button" >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      </div>
+
+<div class="flexernav">
+    <img src="../vs images.css/linkedlogo.PNG" alt="" class="img1" style="margin-top: 40px;">
+    <a href="">Products</a>
+    <a href="">Solutions</a>
+    <a href="">Marketplace</a>
+    <a href="">Customers</a>
+    <a href="">Community</a>
+    <a href="">Pricing</a>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <a href=""><button class="butt1">Sign in</button></a>
+    <a href=""><button class="butt2">Sign up</button></a></div>
+
+    </nav>
+    <section class="m1">
+        <img src="fish.PNG" alt=""; class="fish">
+        <div class="d2">
+            <div class="d3">
+            <h1 class="wel">Welcome to the developer cloud</h1>
+            <p class="para1">We make it simple to launch in the cloud 
+                and scale up as you grow – with an intuitive control panel, 
+                predictable pricing, team accounts, and more.</p>
+        </div>
+    </div>
+    <section class="overlay">
+        <div class="d4">
+            <h2 class="first">Deploy in seconds</h2>
+
+            <input type="text" placeholder="Firstname" class="inp2"><br>
+            <input type="text" placeholder="Email Address" class="inp2"><br>
+            <input type="text" placeholder="Password" class="inp2"><br>
+            <a href="">
+                <button class="btn btn-info" style="margin-top: 50px;  margin-left: 70px;">Sign up with Email</button>
+            </a><br>
+            <a href="">
+                <button class="btn btn-outline-info" style="margin-top: 30px; margin-left: 60px;"> <b> Sign up with Google</b></button>
+            </a>
+            <a href="">
+                <button  class="btn btn-outline-primary" style="margin-top: 35px; margin-left: 100px;"> <b> Log Out</b></button>
+            </a>
+
+    </section>
+
+    </div>
+    </section>
+
+
+    <div>
+        <div class="modal" id="myModal">
+            <div class="modal-dialog">
+              <div class="modal-content pt-3 w-25">
+        <!-- <div class="d4"> -->
+            <h2 class="text-dark" style="font-size: 15px; text-align: center;">Deploy in seconds</h2>
+            <input type="text" placeholder="Firstname" class="inp2"><br>
+            <input type="text" placeholder="Email Address" class="inp2"><br>
+            <input type="text" placeholder="Password" class="inp2"><br>
+            <a href="">
+                <button class="btn btn-info" style="margin-top: -50px;  margin-left: 70px;">Sign up with Email</button>
+            </a><br>
+            <a href="">
+                <button class="btn btn-outline-info" style="margin-top: -100px; margin-left: 60px;"> <b> Sign up with Google</b></button>
+            </a>
+            <a href="">
+                <button  class="btn btn-outline-primary" style="margin-top: -100px; margin-left: 100px;"> <b> Log Out</b></button>
+            </a>
+    
+        </div>
+    </div>
+    </div>
+</div>
+    </div>
+
+
+    <h3>INNOVATIVE BUSINESSES TRUST OCEAN</h3>
+    <div class="d5">
+        <img src="oc1.PNG" alt="">
+        <img src="oc2.PNG" alt="">
+        <img src="oc3.PNG" alt="">
+        <img src="oc4.PNG" alt="">
+        <img src="oc5.PNG" alt="">
+        <img src="oc6.PNG" alt="">
+    </div>
+    
+        <div class="first" style="margin-top: 100px;">
+            <h1 class="txta">Simple solutions for complex issues</h1>
+            <p>Running a business is hard. Your cloud doesn’t have to be.</p>
+        </div>
+
+        <div class="third">
+            <div class="container">
+                <div class="sec" style="width: 300px; margin-top:40px">
+                    <img src="ocean (2).PNG" alt="">
+                    <div class="webm">
+                    <h2>Web & mobile apps</h2>
+                    <p>Create and run your web and mobile apps’ backends with lightning speed.</p>
+                    <a href="" ; class="link">Web and App development</a>
+                   </div>
+            </div>
+            </div>
+            <div class="container">
+                <div class="sec" style="width: 300px">
+                    <img src="ocean (3).PNG" alt="">
+                      <div class="website"> 
+                        <h2>Website hosting</h2>
+                        <p>Easily and reliably host a website for your
+                            business while keeping complete control of the underlying infrastructure.</p>
+                        <a href="" ; class="link">Website hosting in the cloud</a>
+                      </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="sec" style="width: 300px">
+                    <img src="ocean (4).PNG" alt="">
+                    <div class="streaming">
+                        <h2>Streaming</h2>
+                        <p>We provide the combination of flexible compute layers with
+                            low-bandwidth pricing that make building a streaming service easy
+                            for your developers – and cost-efficient for your business.</p>
+                        <a href="" ; class="link">Streaming compute services</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/latestcompiled.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+  <script src="../js/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <style>
+       .nav-tabs, .nav-tabs .active, .bg{
+           border: none !important;
+           background-color: rgb(34, 46, 55);
+       }
+       .nav-tabs .active{
+           border-bottom: 3px solid rgb(8, 250, 169) !important;
+           background-color: rgb(34, 46, 55) !important;
+           color:  rgb(8, 250, 169)!important;
+       }
+       .nav-tabs .nav-item{
+           width: 27%;
+           text-align: center;
+       }
+       .nav-tabs .nav-link{
+           color: whitesmoke
+       }
+
+       .cam{
+         margin: 95px;
+         margin-top: 150px;
+       }
+
+       .fix{
+         position: fixed;
+         right: 20px;
+         top: 550px;
+         background-color:rgb(8, 250, 169);
+          border-radius: 50px; 
+          height: 50px; 
+          width: 50px;
+          padding: 15px;
+       }
+
+       .fix2{
+        position: fixed;
+         right: 23px;
+         top: 500px;
+         background-color:  rgb(34, 46, 55);
+          border-radius: 50px; 
+          height: 45px; 
+          width: 45px;
+          padding: 12px;
+       }
+       
+       .menu{
+         color: white;
+       }
+       
+       /* .camera{
+         background-color: black;
+         height: 700px;
+         width: 500px;
+         margin: 0px;
+         position: fixed;
+         top: -10px;
+         left: 0px;
+       } */
+
+   </style>
+</head>
+
+<body style="background-color: rgb(18, 31, 38);">
+    <div class="container sticky-top p-0" style="background-color: rgb(34, 46, 55);">
+  
+  <br>
+  <!-- Nav tabs -->
+      <div style="background-color: rgb(34, 46, 55); padding: 0 10px; display: flex; justify-content: space-between;">
+    <h2 style="color: rgb(140, 144, 148);">Whatsapp</h2>
+    <div class="nav mt-2" >
+      <i class="fa fa-search fa-lg nav-link" style="color: rgb(140, 144, 148);"></i>
+      <a href=""  data-toggle="modal" data-target="#myModal">
+    <i class="fa fa-ellipsis-v fa-lg nav-link" style="color: rgb(140, 144, 148);"></i>
+      </a>
+
+    </div>
+</div><br>
+
+
+
+<ul class="nav nav-tabs">
+      <li class="nav-item" style="width: 45px;">
+        <a class="nav-link" data-toggle="tab" href="#camera"><i class="fa fa-camera text-light"></i></a>
+      </li>
+    <li class="nav-item">
+      <a class="nav-link active" data-toggle="tab" href="#chats">Chats</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#status">Status</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#calls">Calls</a>
+    </li>
+  </ul>
+  </div>
+
+  <div class="modal fade" id="myModal" style="padding-left: 200px; ">
+    <div class="modal-dialog" style="width: 200px; height: 250px;" >
+      <div class="modal-content" style="background-color: rgb(34, 46, 55);;"> 
+
+      <a href="" class="text-light pl-3 pt-3">New group</a><br>
+      <a href="" class="text-light pl-3">New broadcast</a><br>
+      <a href="" class="text-light pl-3">WhatsApp Web</a><br>
+      <a href="" class="text-light pl-3">Starred messages</a><br>
+      <a href="" class="text-light pl-3">Settings</a><br>
+        
+      </div>
+    </div>
+  </div>
+ 
+  <!-- Tab panes -->
+  <main class="tab-content">
+    <div id="camera" class="container tab-pane p-3">
+<a href="camera.html">
+  <button class="btn btn-outline-light cam">Enable Camera</button>
+</a>     
+  </div>
+
+    <div id="chats" class="container tab-pane p-3 active">
+      <div class="media mb-3">
+
+        <a href="" data-toggle="modal" data-target="#dp">
+        <div style="border-radius: 100%; width: 50px; height: 50px; overflow: hidden;">
+    <img src="../vs images.css/chatbckpro.png" alt="" width="50px">
+   </div>
+  </a>
+
+  <div class="modal" id="dp" style="padding-top: 200px;">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+      
+        <img src="../vs images.css/chatbckpro.png" alt="">
+      
+      </div>
+    </div>
+  </div>
+
+  <a href="whatsappchat.html">                      
+        <div class="media-body ml-2">
+        <h5 class="mb-0" style="color: white;">me, myself & I</h5>
+        <p style="color: rgb(140, 144, 148); margin-bottom: 0px;">Ahh. You'll finish it o IJN. 20:51</p>
+        <hr style="background-color: rgba(140, 144, 148, 0.363); margin-top: 5px;">
+    </div>
+  </a>
+
+    </div>
+
+    <div class="media mb-3">
+      
+      <a href="" data-toggle="modal" data-target="#dp2"> 
+      <div style="border-radius: 100%; width: 50px; height: 50px; overflow: hidden;">
+        <img src="../vs images.css/stp3.png" alt="" width="50px">
+       </div>
+      </a>
+
+      <div class="modal" id="dp2" style="padding-top: 170px;">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+          
+            <img src="../vs images.css/stp3.png" alt="">
+          
+          </div>
+        </div>
+      </div>
+
+  <div class="media-body ml-2">
+      <h5 class="mb-0" style="color: white;">Lucy</h5>
+      <p style="color: rgb(140, 144, 148); margin-bottom: 0px;">Same to you. xoxo. 11:40</p>
+      <hr style="background-color: rgba(140, 144, 148, 0.363); margin-top: 5px;">
+  </div>
+  </div>
+
+  <div class="media mb-3">
+    <div style="border-radius: 100%; width: 50px; height: 50px; overflow: hidden;">
+<img src="../vs images.css/stp5.png" alt="" width="50px">
+</div>
+
+<div class="media-body ml-2">
+    <h5 class="mb-0" style="color: white;">Daniel Santos</h5>
+    <p style="color: rgb(140, 144, 148); margin-bottom: 0px;">Howfar!. 11:13</p>
+    <hr style="background-color: rgba(113, 117, 121, 0.363); margin-top: 5px;">
+</div>
+</div>
+
+<div class="media mb-3">
+
+  <a href="" data-toggle="modal" data-target="#dp3">  
+     <div style="border-radius: 100%; width: 50px; height: 50px; overflow: hidden;">
+    <img src="../vs images.css/stp6.png" alt="" width="50px">
+    </div>
+  </a>
+
+  <div class="modal" id="dp3" style="padding-top: 200px;">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+      
+        <img src="../vs images.css/stp6.png" alt="">
+      
+      </div>
+    </div>
+  </div>
+
+<div class="media-body ml-2">
+  <h5 class="mb-0" style="color: white;">Mimo</h5>
+  <p style="color: rgb(140, 144, 148); margin-bottom: 0px;">Jimmy Jimmy Jimmy. Yesterday</p>
+  <hr style="background-color: rgba(140, 144, 148, 0.363); margin-top: 5px;">
+</div>
+</div>
+
+ <div class="media mb-3">
+        <div style="border-radius: 100%; width: 50px; height: 50px; overflow: hidden;">
+    <img src="../vs images.css/stp2.png" alt="" width="50px">
+   </div>
+
+    <div class="media-body ml-2">
+        <h5 class="mb-0" style="color: white;">Updates guy</h5>
+        <p style="color: rgb(140, 144, 148); margin-bottom: 0px;">Hello BOSS. Yesterday</p>
+        <hr style="background-color: rgba(140, 144, 148, 0.363); margin-top: 5px;">
+    </div>
+    </div>
+
+    <div class="media mb-3">
+      <div style="border-radius: 100%; width: 50px; height: 50px; overflow: hidden;">
+  <img src="../vs images.css/stp8.png" alt="" width="50px">
+ </div>
+
+  <div class="media-body ml-2">
+      <h5 class="mb-0" style="color: white;">Santy</h5>
+      <p style="color: rgb(140, 144, 148); margin-bottom: 0px;">Good Morning. 2days ago</p>
+      <hr style="background-color: rgba(140, 144, 148, 0.363); margin-top: 5px;">
+  </div>
+  </div>
+
+  <div class="media mb-3">
+    <div style="border-radius: 100%; width: 50px; height: 50px; overflow: hidden;">
+<img src="../vs images.css/stp3.png" alt="" width="50px">
+</div>
+
+<div class="media-body ml-2">
+    <h5 class="mb-0" style="color: white;">Dollie Santos</h5>
+    <p style="color: rgb(140, 144, 148); margin-bottom: 0px;">Same to you. xoxo. 11:40</p>
+    <hr style="background-color: rgba(140, 144, 148, 0.363); margin-top: 5px;">
+</div>
+</div>
+<div class="fix">
+  <i class="	fa fa-wechat fa-lg text-light"></i>
+</div>
+    </div>
+
+
+    <div><br>
+      <div class="media mb-3">
+        <div style="border-radius: 100%; width: 50px; height: 50px; overflow: hidden;">
+    <img src="../vs images.css/landcam.jpg" alt="" width="50px">
+   </div>
+
+    <div class="media-body ml-2">
+        <h5 class="mb-0" style="color: white;">My Status</h5>
+        <p style="color: rgb(140, 144, 148); margin-bottom: 0px;">Today. 11:40</p>
+        <hr style="background-color: rgba(140, 144, 148, 0.363); margin-top: 5px;">
+    </div>
+    </div>
+
+    <div class="fix2">
+      <i class="	fa fa-pencil fa-lg text-light"></i>
+    </div>
+
+    <div class="fix">
+      <i class="	fa fa-camera fa-lg text-light"></i>
+    </div>
+
+    <p class="text-light">Recent Updates</p>
+    <div class="media mb-3">
+      <div style="border-radius: 100%; width: 50px; height: 50px; overflow: hidden; border: 4px dashed  rgb(8, 250, 169);">
+  <img src="../vs images.css/stp3.png" alt="" width="50px">
+ </div>
+
+  <div class="media-body ml-2">
+      <h5 class="mb-0" style="color: white;">Dollie Santos</h5>
+      <p style="color: rgb(140, 144, 148); margin-bottom: 0px;">Just now</p>
+      <hr style="background-color: rgba(140, 144, 148, 0.363); margin-top: 5px; ">
+  </div>
+  </div>
+  <div class="media mb-3">
+    <div style="border-radius: 100%; width: 50px; height: 50px; overflow: hidden; border: 4px dashed  rgb(8, 250, 169);">
+<img src="../vs images.css/img.JPG" alt="" width="50px">
+</div>
+
+<div class="media-body ml-2">
+    <h5 class="mb-0" style="color: white;">Santy</h5>
+    <p style="color: rgb(140, 144, 148); margin-bottom: 0px;">1 minute ago</p>
+    <hr style="background-color: rgba(140, 144, 148, 0.363); margin-top: 5px;">
+</div>
+</div>
+        </div>
+    <div id="calls" class="container tab-pane fade"><br>
+      <div class="media mb-3">
+        <div style="border-radius: 100%; width: 50px; height: 50px; overflow: hidden;">
+    <img src="../vs images.css/stp3.png" alt="" width="50px">
+   </div>
+
+    <div class="media-body ml-2">
+        <h5 class="mb-0" style="color: white;">Dollie Santos</h5>
+        <p style="color: rgb(140, 144, 148); margin-bottom: 0px;">Today, 17:04</p>
+        <hr style="background-color: rgba(140, 144, 148, 0.363); margin-top: 5px;">
+
+    </div>
+    <i class="fa fa-phone text-success fa-lg mt-3"></i>
+    </div>
+    <div class="media mb-3">
+      <div style="border-radius: 100%; width: 50px; height: 50px; overflow: hidden;">
+  <img src="../vs images.css/stp3.png" alt="" width="50px">
+ </div>
+
+ <div class="fix">
+  <i class="	fa fa-phone fa-lg text-light"></i>
+</div>
+
+  <div class="media-body ml-2">
+      <h5 class="mb-0" style="color: white;">Dollie Santos</h5>
+      <p style="color: rgb(140, 144, 148); margin-bottom: 0px;">Today, 17:04</p>
+      <hr style="background-color: rgba(140, 144, 148, 0.363); margin-top: 5px;">
+
+  </div>
+  <i class="fa fa-video-camera text-success fa-lg mt-3"></i>
+  </div>
+  <div class="media mb-3">
+    <div style="border-radius: 100%; width: 50px; height: 50px; overflow: hidden;">
+<img src="../vs images.css/stp3.png" alt="" width="50px">
+</div>
+
+<div class="media-body ml-2">
+    <h5 class="mb-0" style="color: white;">Dollie Santos</h5>
+    <p style="color: rgb(140, 144, 148); margin-bottom: 0px;">Today, 17:04</p>
+    <hr style="background-color: rgba(140, 144, 148, 0.363); margin-top: 5px;">
+
+</div>
+<i class="fa fa-video-camera text-success fa-lg mt-3"></i>
+</div>
+<div class="media mb-3">
+  <div style="border-radius: 100%; width: 50px; height: 50px; overflow: hidden;">
+<img src="../vs images.css/stp3.png" alt="" width="50px">
+</div>
+
+<div class="media-body ml-2">
+  <h5 class="mb-0" style="color: white;">Dollie Santos</h5>
+  <p style="color: rgb(140, 144, 148); margin-bottom: 0px;">Today, 17:04</p>
+  <hr style="background-color: rgba(140, 144, 148, 0.363); margin-top: 5px;">
+
+</div>
+<i class="fa fa-video-camera text-success fa-lg mt-3"></i>
+</div>
+<div class="media mb-3">
+  <div style="border-radius: 100%; width: 50px; height: 50px; overflow: hidden;">
+<img src="../vs images.css/stp3.png" alt="" width="50px">
+</div>
+
+<div class="media-body ml-2">
+  <h5 class="mb-0" style="color: white;">Dollie Santos</h5>
+  <p style="color: rgb(140, 144, 148); margin-bottom: 0px;">Today, 17:04</p>
+  <hr style="background-color: rgba(140, 144, 148, 0.363); margin-top: 5px;">
+
+</div>
+<i class="fa fa-video-camera text-success fa-lg mt-3"></i>
+</div>
+<div class="media mb-3">
+  <div style="border-radius: 100%; width: 50px; height: 50px; overflow: hidden;">
+<img src="../vs images.css/stp3.png" alt="" width="50px">
+</div>
+
+<div class="media-body ml-2">
+  <h5 class="mb-0" style="color: white;">Dollie Santos</h5>
+  <p style="color: rgb(140, 144, 148); margin-bottom: 0px;">Today, 17:04</p>
+  <hr style="background-color: rgba(140, 144, 148, 0.363); margin-top: 5px;">
+
+</div>
+<i class="fa fa-video-camera text-success fa-lg mt-3"></i>
+</div>
+
+    </div>
+  </div>
+</main>
+
+<script src="../js/popper.min.js"></script>
+<script src="../js/latestcompiled.min.js"></script>
+</body>
+</html>

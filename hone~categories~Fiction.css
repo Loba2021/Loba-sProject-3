@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+}
+body{
+    height: 5000px;
+    font-family: 'Roboto Slab', serif;
+    overflow-x: hidden;
+}
+nav{
+    height: 100px;
+    width: 100%;
+    display: flex !important;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    color: var(--text);
+    background-color: var(--background);
+    --text: white;
+    --text-inverse: white;
+    --background: rgb(45, 25, 18);
+    align-items: center;
+    transition: 0.5s ease-out;
+    box-shadow: 0 3px 20px black;  
+    /* background-image: url(../html&css/con1bck.jpg); */
+}
+.insidenav{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+.navbtns{
+    height: 35px;
+    width: 100px !important;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(45, 25, 18);
+    border-radius: 5px;
+    color: white;
+}
+.navbtns:hover{
+    border: 1px solid rgb(45, 25, 18);
+    background-color: white;
+    color:rgb(45, 25, 18) ;
+}
+.links{
+    color: white;
+    text-decoration: none;
+}
+.links:hover{
+    color: rgb(45, 25, 18) !important;
+}
+.underline{
+    position: relative;
+    top: -40px;
+    width: 500px;
+}
+h3{
+    font-size: 150px !important;
+    color: rgb(45, 25, 18) !important;
+    /* text-shadow: 1px 10px 10px rgb(43, 42, 42); */
+}
+.con2{
+    position: relative;
+    top: 100px !important;
+}
+.con2::after{
+    content: "";
+    position: absolute;
+    top: 1500px !important;
+    background-color: #4720003d;
+    width: 100%;
+    left: 0;
+    height: 150vh;
+}
+.sectcon{
+    width: 40%;
+    margin: 50px;
+    margin-left: 60px;
+    position: relative;
+    float: left;
+    cursor: pointer;
+}
+.sectcon:hover .prevcon{
+    width: 100%;
+    padding: 10px 25px;
+    visibility: visible;
+    color: white;
+    opacity: 0.8; 
+   }
+.prevtext{
+    position: relative;
+    top: 50%;
+    color: white;
+}   
+.Prevbtn{
+    height: 40px;
+    width: 160px !important;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    background-color: black;
+    border-radius: 50px !important;
+    color: white;
+}
+.prevcon{
+    position: absolute;
+     bottom: 0;
+     right: 0;
+     left: 0;
+     top: 0;
+     background: linear-gradient(to top, #080808, #383736, #837872, #bcb5b062, #f9f6f302);
+     color: white;
+     /* margin-bottom: 5px; */
+     font-family: sans-serif;
+     text-align: center;
+     /* padding-top: 90% !important; */
+     opacity: 0;
+     visibility: hidden;
+     -webkit-transition: visibility 0s, opacity 0.5s linear; 
+     transition: visibility 0s, opacity 0.5s linear;
+    }
+    .con3{
+        /* width: 25%; */
+        display: flex;
+        position: relative;
+        padding: 20px;
+        top: 100px;
+        flex-wrap: wrap !important;
+        /* background-color: red; */
+        /* flex-direction: row; */
+    }
+    /* .longarrow{
+        position: relative;
+        bottom: 30px;
+        left: 75px;
+        font-size: 100px !important;
+    } */

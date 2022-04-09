@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="text"></h1>
+    <h1 id="show"></h1>
+    <script>
+        // let texts
+        // let myArray = ['car1','car2','car3','car4']
+        // myArray.forEach(myFunction)
+        // texts+=`<br>`
+        // text.innerHTML += texts
+        // function myFunction(params) {
+        //     texts += params 
+        // }`<br>`
+        let a={
+            name:'Loba', 
+            age:10, 
+            phone:17052895400, 
+            hobby:['coding','Eating','sleeping'], 
+            stacks:{names:['Javascript','Angular'], level:60}
+        }
+
+        // function Human(name, age, eyes, legs, hobbies, gender){
+        //     this.name=name || 'Human'
+        //     this.age=age
+        //     this.eyes=eyes || 2
+        //     this.legs=legs
+        //     this.hobbies=hobbies
+        //     this.gender=gender
+        //     this.CanWalk= function(){
+        //         return this.legs==2;
+        //     }
+        //     this.eve= function(){
+        //         // return this.gender=='Female'
+        //         if (gender=='Female') {
+        //             console.log(`${name} is female`);
+        //         }
+        //         else{
+        //             console.log(`${name} is male`);
+        //         }
+        //     }
+        //     this.info= function(){
+        //         return `The name is ${this.name}, and age is ${this.age} and eyes is ${eyes}`
+        //     }
+        // }
+        // let adam =new Human('Loba',20,2,2,["singing", 'laughimng'],'Female')
+        // console.log(adam.eve());
+            // class Human{
+            //     constructor(name,age,eyes,legs,hobbies,gender){
+            //         let color="black"
+            //         this.name=name || 'Human'
+            //         this.age=age
+            //         this.eyes=eyes || 2
+            //         this.legs=legs
+            //         this.hobbies=hobbies
+            //         this.gender=gender
+            //         this.getColor=function(){
+            //         return color
+            //     }
+            //     }
+            // }
+            // class Adam extends Human{
+            //     constructor(){
+            //         super();
+            //         this.sex="man"
+            //     }
+            // }
+            // let n=new Adam()
+            // console.log(n);
+
+            // for loop
+            let array = ['food', 'cloth', 'shelter', 'man', 'woman']
+            let human = [
+                {name: 'loba', age: 30},
+                {name: 'dan', age: 20},
+                {name: 'samson', age: 20},
+                {name: 'jude', age: 10},
+                {name: 'samuel', age: 50},
+                {name: 'israel', age: 25}
+            ]
+                    for (let i = 0; i < human.length; i++) {
+                        if(human[i].age > 10){
+                        document.getElementById('show').innerHTML += human[i].name
+                    }
+                        
+                    }
+
+            // for (let index = 0; index < array.length; index++) {
+            //     if(array.includes('shelter')){
+            //         document.getElementById('show').innerHTML = array
+            //     }
+                // document.getElementById('show').innerHTML = array
+                
+            
+            
+    </script>
+</body>
+</html>

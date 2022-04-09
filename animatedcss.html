@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animate__animated</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="../js/jquery.min.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <style>
+      body{
+          text-align: center;
+          height: 2500px;
+          /* background-color: rgb(252, 229, 205); */
+          /* padding: 100px; */
+      }
+      /* .con1{
+          margin: auto;
+          background-color: black; 
+          height: 600px; 
+          width: 600px;
+          border-radius: 50%;
+          color: white;
+      } */
+      .background{
+        position: relative;
+	  /* background-image: url("../html&css/alarmimg.jpg"); */
+      top: 300px;
+      left: 0px;
+      /* margin-top: 300px; */
+      /* background-repeat: no-repeat; */
+      /* background-size: cover; */
+      width: 100%;
+      height: 700px;
+	  /* filter: blur(6px); */
+      background-color: black;
+      }
+      nav{
+          display: flex;
+          justify-content: space-around;
+          /* background-color: black; */
+          /* color: white; */
+          width: 100%;
+          height: 70px;
+          position: fixed;
+          top: 0px;
+          align-items: center;
+          color: var(--text);
+          background-color: var(--background);
+          --text: white;
+          --text-inverse: black;
+          --background: black;
+          position: fixed;
+          top: 0;
+          border-bottom: 2px solid red;
+      }
+      .nav-scrolled{
+          --text: black;
+          --background: white; 
+      }
+      .bck2{
+          width: 300px;
+          height: 10px;
+          background-color: green;
+          position: relative;
+          left: 200px;
+      }
+  </style>
+</head>
+<body>
+    <nav class="navs">
+        <span>Logo</span>
+
+        <div>
+            <a href="">link</a>
+            <a href="">link</a>
+            <a href="">link</a>
+        </div>
+
+        <span>More</span>
+    </nav>
+    
+    <!-- <div class="con1">
+    <h1 class="animate__animated animate__rubberBand" style="font-size: 100px;">Hello World!</h1>
+
+    </div> -->
+    <div style="height: 500px; width: 100%; background-color: red;">
+
+    </div>
+    
+    <div class="bck2">
+    </div>
+
+    <div style="height: 500px; width: 100%; background-color: red;">
+
+    </div>
+    <button onclick="change()">click me</button>
+    <!-- <div></div> -->
+</body>
+</html>
+<script>
+    const navbar = document.querySelector('nav');
+    const bck = document.querySelector('.bck2');
+    const backgroundOptions = { }
+
+    const backgroundObserver = new IntersectionObserver(function (enteries, backgroundObserver){
+        enteries.forEach(entry => {
+            if (!entry.isIntersecting) {
+                navbar.classList.add('nav-scrolled');
+                console.log(entry);
+            } else{
+                navbar.classList.remove('nav-scrolled');
+            }
+        });
+    }, backgroundOptions)
+
+
+    backgroundObserver.observe(bck);
+
+    function change(){
+        navbar.classList.add('nav-scrolled');
+    }
+</script>
+<script src="../js/popper.min.js"></script>
+<script src="../js/latestcompiled.min.js"></script>

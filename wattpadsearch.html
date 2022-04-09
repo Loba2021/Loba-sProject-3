@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wattpad-Search</title>
+    <link rel="stylesheet" href="wattpad.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="../js/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      .cont2{
+        display: flex;
+        width: 75%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        /* padding: 20px; */
+      }
+      .innercons{
+        background-color: rgb(250, 250, 250);
+        width: 200px;
+        height: 100px;
+        border-radius: 5px;
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: space-between;
+        box-shadow: -1px 1px 6px rgb(157, 157, 158);
+      }
+      .smnav{
+        display: none;
+      }
+      
+      @media  (max-width: 576px){
+        .smnav{
+        display: inherit;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .nav-tabs, .nav-tabs .active, .bg{
+        border: none !important;
+        background-color: rgb(2, 2, 3) !important;
+    }
+    .nav-tabs .active{
+        border-bottom: 3px solid rgb(255, 80, 10) !important;
+        color:  rgb(255, 80, 10)!important;
+        background-color: rgb(2, 2, 3) !important;
+
+    }
+    .nav-tabs .nav-item{
+        width: 10%;
+        margin-left: 30px;
+        text-align: center;
+    }
+    .nav-tabs .nav-link{
+        color: whitesmoke
+    }
+    .cont1{
+      display: none;
+    }
+    .cont2{
+      width: 100%;
+    }
+    .thecon{
+      color: rgb(215, 223, 226);
+    }
+    .contsm1{
+      padding: 5px !important;
+      color: rgb(215, 223, 226);
+    }
+    .smtop{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      padding-bottom: 10px !important;
+      padding-top: 10px;
+      background-color: black;
+    }
+    .searchcon{
+      display: flex;
+      justify-content: space-between;
+      border: 1px solid rgb(53, 53, 53);
+      border-radius: 20px;
+      width: 100%;
+      height: 40px;
+    }
+    .searchinp{
+      background-color: rgba(255, 255, 255, 0);
+      border: none;
+      outline: none;
+      width: 80%;
+      font-size: small;
+      color: white;
+    }
+    .smimg{
+      width: 50px;
+    }
+    .innerInner{
+      padding: 0px !important;
+      align-items: center;
+      height: 60px;
+      margin-top: 20px;
+    }
+    .innercons{
+      height: 75px;
+      width: 155px;
+      padding: 0px;
+    }
+      }
+    </style>
+</head>
+<body>
+        <!-- Nav tabs -->
+        <div class="smnav">
+        
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link" href="wattpad.html">A</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#menu1">B</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#menu2">C</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#menu3">D</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#menu4">E</a>
+            </li>
+          </ul>
+          </div>
+        
+          <!-- Tab panes -->
+          <div class="tab-content thecon">
+            <div id="home" class="container tab-pane fade"><br>
+            </div>
+            <div id="menu1" class="container tab-pane active"><br>
+              <h4>Search</h4>
+              <div class="smtop sticky-top">
+                <div class="searchcon">
+                  <i class="fa fa-search fa-lg" style="margin: 10px;"></i>
+                <input type="text" placeholder="Search stories, people or reading lists" class="searchinp">
+                </div>
+              </div>
+              <section class="contsm1">
+                <h5 class="m-0">Browse tags</h5><br>
+                <div class="cont2">
+                  <div class="innercons">
+                    <div style="padding-top: 35px; padding-left: 10px;" class="innerInner"><a href="" class="links font-weight-bold">Paid Stories</a></div>
+                    <div><img src="../vs images.css/innercon1.PNG" alt="" class="smimg"></div>
+                  </div>
+                  <div class="innercons">
+                    <div style="padding-top: 35px; padding-left: 10px;" class="innerInner"><a href="" class="links font-weight-bold">Paid Stories</a></div>
+                    <div><img src="../vs images.css/innercon1.PNG" alt="" class="smimg"></div>
+                  </div>
+                  <div class="innercons">
+                    <div style="padding-top: 35px; padding-left: 10px;" class="innerInner"><a href="" class="links font-weight-bold">Paid Stories</a></div>
+                    <div><img src="../vs images.css/innercon1.PNG" alt="" class="smimg"></div>
+                  </div>
+                  <div class="innercons">
+                    <div style="padding-top: 35px; padding-left: 10px;" class="innerInner"><a href="" class="links font-weight-bold">Paid Stories</a></div>
+                    <div><img src="../vs images.css/innercon1.PNG" alt="" class="smimg"></div>
+                  </div>
+                  <div class="innercons">
+                    <div style="padding-top: 35px; padding-left: 10px;" class="innerInner"><a href="" class="links font-weight-bold">Paid Stories</a></div>
+                    <div><img src="../vs images.css/innercon1.PNG" alt="" class="smimg"></div>
+                  </div>
+                  <div class="innercons">
+                    <div style="padding-top: 35px; padding-left: 10px;" class="innerInner"><a href="" class="links font-weight-bold">Paid Stories</a></div>
+                    <div><img src="../vs images.css/innercon1.PNG" alt="" class="smimg"></div>
+                  </div>
+                  <div class="innercons">
+                    <div style="padding-top: 35px; padding-left: 10px;" class="innerInner"><a href="" class="links font-weight-bold">Paid Stories</a></div>
+                    <div><img src="../vs images.css/innercon1.PNG" alt="" class="smimg"></div>
+                  </div>
+                  <div class="innercons">
+                    <div style="padding-top: 35px; padding-left: 10px;" class="innerInner"><a href="" class="links font-weight-bold">Paid Stories</a></div>
+                    <div><img src="../vs images.css/innercon1.PNG" alt="" class="smimg"></div>
+                  </div>
+                  <div class="innercons">
+                    <div style="padding-top: 35px; padding-left: 10px;" class="innerInner"><a href="" class="links font-weight-bold">Paid Stories</a></div>
+                    <div><img src="../vs images.css/innercon1.PNG" alt="" class="smimg"></div>
+                  </div>
+                  <div class="innercons">
+                    <div style="padding-top: 35px; padding-left: 10px;" class="innerInner"><a href="" class="links font-weight-bold">Paid Stories</a></div>
+                    <div><img src="../vs images.css/innercon1.PNG" alt="" class="smimg"></div>
+                  </div>
+                  <div class="innercons">
+                    <div style="padding-top: 35px; padding-left: 10px;" class="innerInner"><a href="" class="links font-weight-bold">Paid Stories</a></div>
+                    <div><img src="../vs images.css/innercon1.PNG" alt="" class="smimg"></div>
+                  </div>
+                  <div class="innercons">
+                    <div style="padding-top: 35px; padding-left: 10px;" class="innerInner"><a href="" class="links font-weight-bold">Paid Stories</a></div>
+                    <div><img src="../vs images.css/innercon1.PNG" alt="" class="smimg"></div>
+                  </div>
+                  <div class="innercons">
+                    <div style="padding-top: 35px; padding-left: 10px;" class="innerInner"><a href="" class="links font-weight-bold">Paid Stories</a></div>
+                    <div><img src="../vs images.css/innercon1.PNG" alt="" class="smimg"></div>
+                  </div>
+                  <div class="innercons">
+                    <div style="padding-top: 35px; padding-left: 10px;" class="innerInner"><a href="" class="links font-weight-bold">Paid Stories</a></div>
+                    <div><img src="../vs images.css/innercon1.PNG" alt="" class="smimg"></div>
+                  </div>
+                  <div class="innercons">
+                    <div style="padding-top: 35px; padding-left: 10px;" class="innerInner"><a href="" class="links font-weight-bold">Paid Stories</a></div>
+                    <div><img src="../vs images.css/innercon1.PNG" alt="" class="smimg"></div>
+                  </div>
+                  <div class="innercons">
+                    <div style="padding-top: 35px; padding-left: 10px;" class="innerInner"><a href="" class="links font-weight-bold">Paid Stories</a></div>
+                    <div><img src="../vs images.css/innercon1.PNG" alt="" class="smimg"></div>
+                  </div>
+        
+                </div>
+            </section>
+
+            </div>
+            <div id="menu2" class="container tab-pane fade"><br>
+              <h3>C</h3>
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+            </div>
+            <div id="menu3" class="container tab-pane fade"><br>
+              <h3>D</h3>
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+            </div>
+            <div id="menu4" class="container tab-pane fade"><br>
+              <h3>E</h3>
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+            </div>
+          </div>
+        </div>
+
+
+    <nav class="navbar sticky-top">
+        <div class="leftnav">
+          <img src="../vs images.css/wattpadlogo-removebg-preview.png" width="25%" alt="" style="margin-top: -17px;">
+            <div class="dropdown">
+              <p type="button" class="dropdown-toggle" data-toggle="dropdown"><b>Browse</b></p>
+              <div class="dropdown-menu p-0">
+                <section class="d-flex justify-content-between w-100">
+                  <div class="browse text-left">
+                    <div class="">
+                        <p class="dropdown-header font-weight-bold text-dark">BROWSE</p>
+                        <a class="dropdown-item" href="#">Paid Stories</a>
+                        <a class="dropdown-item" href="#">Adventures</a>
+                        <a class="dropdown-item" href="#">FanFiction</a>
+                        <a class="dropdown-item" href="#">Horror</a>
+                        <a class="dropdown-item" href="#">Mystery</a>
+                        <a class="dropdown-item" href="#">Paranormal</a>
+                        <a class="dropdown-item" href="#">Science Fiction</a>
+                        <a class="dropdown-item" href="#">Thriller</a>
+                    </div>
+                    <div style="padding-top: 40px; text-align: left;">
+                      <a class="dropdown-item" href="#">Editor's Picks</a>
+                      <a class="dropdown-item" href="#">Contemporary Lit</a>
+                      <a class="dropdown-item" href="#">Fantasy</a>
+                      <a class="dropdown-item" href="#">Humor</a>
+                      <a class="dropdown-item" href="#">New Adult</a>
+                      <a class="dropdown-item" href="#">Poetry</a>
+                      <a class="dropdown-item" href="#">Short Story</a>
+                      <a class="dropdown-item" href="#">Werewolf</a>
+                    </div>
+                    <div style="padding-top: 40px; text-align: left;">
+                      <a class="dropdown-item" href="#">The Watty's</a>
+                      <a class="dropdown-item" href="#">Diverse Lit</a>
+                      <a class="dropdown-item" href="#">Historical Fiction</a>
+                      <a class="dropdown-item" href="#">LGBTG+</a>
+                      <a class="dropdown-item" href="#">Non-Fiction</a>
+                      <a class="dropdown-item" href="#">Romance</a>
+                      <a class="dropdown-item" href="#">Teen Fiction</a>
+                    </div>
+                    </div>
+                    <div class="m-0 w-25 text-left" style="background-color: rgb(230, 230, 230); padding-bottom: 60px;">
+                      <p class="dropdown-header font-weight-bold text-dark" href="#">WATTPAD PICKS</P>
+                      <a class="dropdown-item" href="#">Editor's Choice</a>
+                      <a class="dropdown-item" href="#">Available in Bookstores</a>
+                      <a class="dropdown-item" href="#">From our Stars</a>
+                      <a class="dropdown-item" href="#">Wattpad Studio Hits</a>
+                      <a class="dropdown-item" href="#">Community Curator</a>
+                      <a class="dropdown-item" href="#">Written with Pride</a>
+                    </div>
+                  </div>
+                </section>
+            </div>
+
+            <div class="dropdown">
+            <p type="button" class="dropdown-toggle" data-toggle="dropdown"><b>Community</b></p>
+            <div class="dropdown-menu">
+              <div class="browse">
+              <div class="m-3"><a class="dropdown-item" href="#">Link 1</a></div>
+              <div class="m-3"><a class="dropdown-item" href="#">Link 2</a></div>
+              <div class="m-3"><a class="dropdown-item" href="#">Link 3</a></div>
+              <div class="m-3"><a class="dropdown-item" href="#">Link 4</a></div>
+              <div class="m-3"><a class="dropdown-item" href="#">Link 5</a></div>
+              <div class="m-3"><a class="dropdown-item" href="#">Link 6</a></div>
+              </div>
+            </div>
+            </div>
+
+            <a href="" class="links"><i class="fa fa-search mr-2"></i> <b>Search</b></a>
+        </div>
+        <div class="rightnav">
+            <a href="" class="links"><b>Write</b></a>
+            <a href="" class="links">
+                <button class="navbtn"><i class="fa fa-bolt mr-2 text-danger" style="font-size: 20px;"></i><b>Try Premium</b></button>
+            </a>
+            <a href="" class="links"><b>HoneOjii</b></a>
+        </div>
+    </nav>
+    <section class="cont1 mt-5" style="padding-left: 100px;">
+        <h4 class="m-0">Browse Categories</h4><br>
+        <div class="cont2">
+          <div class="innercons">
+            <div style="padding-top: 35px; padding-left: 10px;"><a href="" class="links font-weight-bold">Paid Stories</a></div>
+            <div><img src="../vs images.css/innercon1.PNG" alt=""></div>
+          </div>
+          <div class="innercons">
+            <div style="padding-top: 35px; padding-left: 10px;"><a href="" class="links font-weight-bold">Paid Stories</a></div>
+            <div><img src="../vs images.css/innercon1.PNG" alt=""></div>
+          </div>
+          <div class="innercons">
+            <div style="padding-top: 35px; padding-left: 10px;"><a href="" class="links font-weight-bold">Paid Stories</a></div>
+            <div><img src="../vs images.css/innercon1.PNG" alt=""></div>
+          </div>
+          <div class="innercons">
+            <div style="padding-top: 35px; padding-left: 10px;"><a href="" class="links font-weight-bold">Paid Stories</a></div>
+            <div><img src="../vs images.css/innercon1.PNG" alt=""></div>
+          </div>
+          <div class="innercons">
+            <div style="padding-top: 35px; padding-left: 10px;"><a href="" class="links font-weight-bold">Paid Stories</a></div>
+            <div><img src="../vs images.css/innercon1.PNG" alt=""></div>
+          </div>
+          <div class="innercons">
+            <div style="padding-top: 35px; padding-left: 10px;"><a href="" class="links font-weight-bold">Paid Stories</a></div>
+            <div><img src="../vs images.css/innercon1.PNG" alt=""></div>
+          </div>
+          <div class="innercons">
+            <div style="padding-top: 35px; padding-left: 10px;"><a href="" class="links font-weight-bold">Paid Stories</a></div>
+            <div><img src="../vs images.css/innercon1.PNG" alt=""></div>
+          </div>
+          <div class="innercons">
+            <div style="padding-top: 35px; padding-left: 10px;"><a href="" class="links font-weight-bold">Paid Stories</a></div>
+            <div><img src="../vs images.css/innercon1.PNG" alt=""></div>
+          </div>
+          <div class="innercons">
+            <div style="padding-top: 35px; padding-left: 10px;"><a href="" class="links font-weight-bold">Paid Stories</a></div>
+            <div><img src="../vs images.css/innercon1.PNG" alt=""></div>
+          </div>
+          <div class="innercons">
+            <div style="padding-top: 35px; padding-left: 10px;"><a href="" class="links font-weight-bold">Paid Stories</a></div>
+            <div><img src="../vs images.css/innercon1.PNG" alt=""></div>
+          </div>
+          <div class="innercons">
+            <div style="padding-top: 35px; padding-left: 10px;"><a href="" class="links font-weight-bold">Paid Stories</a></div>
+            <div><img src="../vs images.css/innercon1.PNG" alt=""></div>
+          </div>
+          <div class="innercons">
+            <div style="padding-top: 35px; padding-left: 10px;"><a href="" class="links font-weight-bold">Paid Stories</a></div>
+            <div><img src="../vs images.css/innercon1.PNG" alt=""></div>
+          </div>
+          <div class="innercons">
+            <div style="padding-top: 35px; padding-left: 10px;"><a href="" class="links font-weight-bold">Paid Stories</a></div>
+            <div><img src="../vs images.css/innercon1.PNG" alt=""></div>
+          </div>
+          <div class="innercons">
+            <div style="padding-top: 35px; padding-left: 10px;"><a href="" class="links font-weight-bold">Paid Stories</a></div>
+            <div><img src="../vs images.css/innercon1.PNG" alt=""></div>
+          </div>
+          <div class="innercons">
+            <div style="padding-top: 35px; padding-left: 10px;"><a href="" class="links font-weight-bold">Paid Stories</a></div>
+            <div><img src="../vs images.css/innercon1.PNG" alt=""></div>
+          </div>
+          <div class="innercons">
+            <div style="padding-top: 35px; padding-left: 10px;"><a href="" class="links font-weight-bold">Paid Stories</a></div>
+            <div><img src="../vs images.css/innercon1.PNG" alt=""></div>
+          </div>
+
+        </div>
+    </section>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/latestcompiled.min.js"></script>
+    <script>
+
+    </script>
+</body>
+</html>

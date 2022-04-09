@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myToDoList</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="toDolist.js" defer></script>
+</head>
+<style>
+    .maincon{
+        border: 1px solid white;
+        width: 50%;
+        /* height: 500px; */
+        border-radius: 30px;
+        margin-top: 50px;
+        padding: 30px;
+    }
+    .textdiv{
+        width: 50%;
+        background-color: white;
+        border-radius: 30px;
+        height: 100px;
+        position: relative;
+        left: 25%;
+        padding-top: 20px;
+    }
+    .textarea{
+        width: 80%;
+        background-color: white;
+        height: 80%;
+        position: relative;
+        left: 10%;
+        border: none;
+        outline: none;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .buttondiv{
+        margin-top: 30px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .buttons:hover{
+        box-shadow: 1px 1px 3px 1px rgb(181, 181, 189);
+    }
+    .eventlist{
+        padding: 10px;
+        margin-top: 30px;
+        border: 1px solid white;
+        width: 100%;
+        /* height: 25%; */
+        background: linear-gradient(to right,rgb(41, 155, 65), rgb(5, 113, 228), rgb(223, 45, 63));
+        
+    }
+    .sidediv{
+        text-align: center;
+        background: linear-gradient(to right, rgb(41, 155, 65), rgb(5, 113, 228));
+        font-size: 40px;
+        padding-top: 10px;
+        display: flex;
+        justify-content: space-around;
+    }
+    /* .butts{
+        border-radius: 100%;
+        width: 30px;
+        height: 30px;
+        padding: none;
+        
+    } */
+    .show{
+        padding: 10px;
+        font-size: 15px;
+    }
+</style>
+
+
+<body style="background-color: black;">
+<h1 class="text-center text-light">My ToDo List</h1>
+<main class="container-fluid maincon">
+<h1 class="text-center text-light">My Events</h1>
+<div class="textdiv">
+    <textarea type="'text'" id="tasks" placeholder="Enter your Events" class="text-center textarea"> </textarea>
+</div>
+<div class="buttondiv">
+    <button class="btn btn-success buttons w-50" onclick="addToDiv()">Add</button>
+</div>
+<section class="eventlist container-fluid">
+<h3 class="text-light">Event List</h3>
+<!-- <table>
+   <thead>
+   <tbody id="todo">
+    <tr >
+        <td><button>Del</button></td>
+        <td><button>Edit</button></td>
+        <td><input type="text" /></td>
+    </tr>
+   </tbody>
+   </thead>
+       
+</table>  -->
+<div id="todo">
+    
+    <div class="w-100 bg-light h-50 d-flex justify-content-between mb-3">
+    <div class="text-light w-25 sidediv" >
+    <button class="btn btn-primary h-75">Edit</button>
+    <button class="btn btn-danger h-75">Del</button>
+</div> 
+
+
+<textarea class="w-75 bg-light text-dark show" id="storeTask"></textarea>
+</div>
+
+</div>
+
+</section>
+
+</main>
+    
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/latestcompiled.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator2</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="calcscript.js" defer></script>
+    <style>
+        body {
+            background: linear-gradient(to right, #00AAFF, #00ff6C);
+            display: flex;
+            justify-content: center;
+            padding-top: 100px;
+        }
+
+        .interface {
+            width: 270px;
+            height: 480px;
+            background-color: white;
+            align-items: center;
+            border: 1px solid rgb(21, 22, 75);
+            border-radius: 22px;
+            overflow-x: hidden;
+            /* padding: 10px; */
+        }
+
+        .operadisp {
+            /* background-color: red; */
+            height: 40px;
+            width: 100%;
+            text-align: right;
+            color: white;
+        }
+
+        .soldisp {
+            background-color: black;
+            height: 45px;
+            width: 100%;
+            margin-top: 10px;
+            color: white;
+            font-size: 30px;
+        }
+
+        .calcoperas {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            margin: 10px;
+            padding-top: 20px;
+        }
+
+        .buttons {
+            width: 50px;
+            height: 50px;
+            background-color: white;
+            margin: 5px;
+            border-radius: 50%;
+        }
+
+        .buttons:hover {
+            border-radius: 50%;
+            background-color: white;
+            box-shadow: 0px 5px 2px rgb(121, 121, 121);
+
+        }
+
+        .screen {
+            margin-left: -100px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="interface" >
+        <section class="p-3" style="background-color: black; overflow-y: hidden;">
+                <div class="operadisp" data-previous-operand></div>
+            <div class="soldisp" data-current-operand></div>
+        </section>
+        <hr class="bg-dark m-0">
+        <div class="calcoperas">
+            <button class="buttons btn text-danger" data-all-clear>C</button>
+            <button class="buttons btn text-danger" data-delete>CE</button>
+            <button class="buttons btn text-danger">)</button>
+            <button class="buttons btn text-danger" data-operation>/</button>
+            <button class="buttons btn" data-number>7</button>
+            <button class="buttons btn" data-number>8</button>
+            <button class="buttons btn" data-number>9</button>
+            <button class="buttons btn text-danger" data-operation>*</button>
+            <button class="buttons btn" data-number>4</button>
+            <button class="buttons btn" data-number>5</button>
+            <button class="buttons btn" data-number>6</button>
+            <button class="buttons btn text-danger" data-operation>-</button>
+            <button class="buttons btn" data-number>1</button>
+            <button class="buttons btn" data-number>2</button>
+            <button class="buttons btn" data-number>3</button>
+            <button class="buttons btn text-danger" data-operation>+</button>
+            <button class="buttons btn">%</button>
+            <button class="buttons btn" data-number>0</button>
+            <button class="buttons btn" data-number>.</button>
+            <button class="buttons btn" data-equals style="background-color: red;">=</button>
+        </div>
+
+    </div>

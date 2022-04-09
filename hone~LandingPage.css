@@ -1,0 +1,244 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+}
+body{
+    height: 5000px;
+    font-family: 'Roboto Slab', serif;
+    overflow-x: hidden;
+}
+.background2{
+    background-color: #4720003d;
+    padding-bottom: 100px;
+}
+h3{
+    font-size: 150px !important;
+    color: rgb(45, 25, 18) !important;
+}
+.underline{
+    position: relative;
+    top: -40px;
+    width: 500px;
+}
+h2{
+    font-size: 120px !important;
+    color: rgb(45, 25, 18) !important;
+    /* text-shadow: 1px 10px 10px rgb(43, 42, 42); */
+}
+.bckcon{
+	background: url("../html&css/con1bck2.jpg") no-repeat center center fixed;
+	background-size: cover;
+    width: 100%;
+    height: 100vh;
+    /* background-color: red; */
+    color: white;
+}
+.con1{
+    position: relative;
+    top: 150px;
+    /* left: 120px; */
+    width: 60%;
+}
+.con2{
+    margin-top: 100px;
+}
+.sectcon{
+    /* display: flex;
+    justify-content: space-between; */
+    width: 45%;
+    position: relative;
+ /* width: 200px;
+ height: 200px; */
+ float: left;
+ cursor: pointer;
+}
+/* .imgcon{
+    width: 100%;
+} */
+
+.sectcon:hover .prevcon{
+    width: 100%;
+    padding: 10px 25px;
+    visibility: visible;
+    color: white;
+    opacity: 0.8; 
+   }
+.prevtext{
+    position: relative;
+    top: 50%;
+    color: white;
+}   
+.Prevbtn{
+    height: 40px;
+    width: 160px !important;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    background-color: black;
+    border-radius: 50px !important;
+    color: white;
+}
+.prevcon{
+position: absolute;
+ bottom: 0;
+ right: 0;
+ left: 0;
+ top: 0;
+ background: linear-gradient(to top, #080808, #383736, #837872, #bcb5b062, #f9f6f302);
+ color: white;
+ /* margin-bottom: 5px; */
+ font-family: sans-serif;
+ text-align: center;
+ /* padding-top: 90% !important; */
+ opacity: 0;
+ visibility: hidden;
+ -webkit-transition: visibility 0s, opacity 0.5s linear; 
+ transition: visibility 0s, opacity 0.5s linear;
+}
+nav{
+    height: 100px;
+    width: 100%;
+    display: flex !important;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    color: var(--text);
+    background-color: var(--background);
+    --text: white;
+    --text-inverse: white;
+    --background: rgba(255, 255, 255, 0);
+    align-items: center;
+    transition: 0.5s ease-out;
+    box-shadow: 0 3px 20px black;
+    
+}
+.nav-scrolled{
+    --text: white;
+    --background: rgb(45, 25, 18);
+}
+.navbtns-scrolled{
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0);
+}
+.insidenav{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+.navbtns{
+    height: 35px;
+    width: 100px !important;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(45, 25, 18);
+    border-radius: 5px;
+    color: white;
+}
+.navbtns:hover{
+    border: 1px solid rgb(45, 25, 18);
+    background-color: white;
+    color:rgb(45, 25, 18) ;
+}
+.changenav{
+    position: relative;
+    top: -100px;
+} 
+.links{
+    color: white;
+    text-decoration: none;
+}
+.links:hover{
+    color: rgb(45, 25, 18) !important;
+}
+.left{
+    transform: translate(-50%, 50%);
+}
+.right{
+    transform: translate(50%, 50%);
+}
+.left, .right{
+    transition: transform 500ms ease-in;
+}
+.left.appear, .right.appear  {
+    transform: translate(0, 0);
+}
+.bodycover{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    /* background-color: rgba(116, 119, 119, 0.61); */
+    animation-name: comeup;
+    animation-duration: 2s;
+    background: linear-gradient(to bottom, #23140f, #50403ab2, #81716954, #eddfd500);
+
+}
+.goback{
+	background-color: rgb(70, 69, 69);
+	color: white;
+	cursor: pointer;
+	position: relative;
+    top: 100px;
+}
+.goback, a{
+	color: white !important;
+}
+@keyframes comeup{
+    from{
+        opacity: 0;  
+    }
+    to{
+        opacity: 1;  
+    }
+}
+.EventDisplay{
+    width: 50%;
+    /* height: 150px; */
+    border: 1px solid rgb(168, 169, 170);
+    border-radius: 10px;
+    position: absolute;
+    left: 25%;
+    top: 150px;
+    background-color: rgb(230, 235, 237);
+    text-align: center;
+    padding: 20px;
+    /* box-shadow: 0px 0px 10px rgb(168, 169, 170); */
+    /* animation-name: showing; */
+    animation: showing 2s infinite;
+    /* animation-duration: 2s; */
+}
+.buybtn{
+    background-color: white;
+    color: rgb(45, 25, 18);
+    padding: 10px;
+    /* width: 100px; */
+    background-origin: none;
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+    transition: color 300ms ease-in-out;
+    border: 1px solid rgb(45, 25, 18);
+}
+.buybtn::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-color: rgb(45, 25, 18);
+    transition: transform 300ms ease-in-out;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+.buybtn:hover::before{
+    transform: scaleX(1);
+}
+.buybtn:hover{
+    color: white;
+}
+

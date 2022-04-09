@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/jquery.min.js"></script>
+     
+    <style>
+        *{
+            top: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        nav{
+            height: 55px;
+            width: 100%;
+            background-color: white;
+            border: 1px solid lightgray;
+            padding : 15px 25px; 
+            display: flex; 
+             
+            top:0;
+            align-items: center;
+            justify-content:space-between;
+             /* padding-left: 25px; */
+        }
+        .logo{
+            font-size: 36px;
+            color: #0056D2;
+            align-self: center;
+            font-weight: 700;
+            letter-spacing: -1px;
+            font-family: "Helvetica Neue, Helvetica, Arial, sans-serif";
+        }
+        .explore{
+            border: none;
+            width: 100px;
+            height: 37px;
+            align-self: center;
+            font-size: 14px;
+            color: white;
+            border-radius: 4px;
+            margin-left: 30px;
+            font-weight: 500;
+            background-color: #0056D2;
+        }
+        .want{
+             width: 350px;
+
+             font-size: 15px;
+             background-color: transparent;
+             border: none;
+             padding: 6px;
+             align-items: center;
+        }
+        .search{
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            border-width: thin;
+            margin-left: 25px;
+            display: flex;
+        }
+        
+        .material-icons{
+            color: whitesmoke;
+            background-color: #0056D2;
+             padding: 5px;
+            font-size: 23px;
+            display: block;
+        }
+        nav .search input:focus{
+            outline: none;
+        }
+        nav div a{
+            color: black;
+            text-decoration: none;
+            margin: 0px 10px;
+            font-size: 14px;
+             
+        }
+        nav div a:hover{
+            text-decoration: underline;
+            color: #0056D2;
+        }
+        .log{
+            color: #0056D2;
+            margin-right: 3px;
+        }
+        .limits{
+            color: #1f1f1f;
+            font-size: 84px;
+            font-weight: 600;
+            font-family:  Arial, sans-serif;
+            line-height: 94px;
+        }
+        .navLeft{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .vex{
+            padding-left: -100px;
+        }
+        .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 100;
+
+    }
+
+    .dropdown-content a {
+        color: rgba(0, 0, 0, 0.7);
+        padding: 12px 16px;
+        font-size: 16px;
+        line-height: 8px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+        background-color: white;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    .loop{
+        text-decoration: none;
+    }
+    .loop:hover{
+        text-decoration: underline;
+    }
+    .butt1 {
+        width: 200px;
+        height: 80px;
+        background-color: #0056D2;
+        color: white;
+        font-size: 20px;
+        font-weight: 700;
+        border-radius: 3px;
+        border: none;
+        margin: 0px 10px;
+    }
+
+    .butt2 {
+        width: 250px;
+        height: 80px;
+        background-color: white;
+        color: #0056D2;
+        font-size: 18px;
+        font-weight: 700;
+        border-radius: 3px;
+        border: 2px solid #0056D2;
+    }
+
+
+        /* .rightNav{
+            display: flex;
+            justify-content: space-evenly;
+            
+        }
+        .leftNav{
+            display:flex;
+            justify-content: space-evenly;
+        } */
+        @media(max-width:400px) {
+          .show{
+              width: 0px;
+          }
+          .limits{
+              font-size: 40px;
+              line-height: 45px;
+          }
+          .button{
+              flex-direction: column;
+              justify-content: center;
+          }
+          .butt1,.butt2{
+                    width: 80%;
+                     
+          }
+        }
+    </style>
+</head>
+<body>
+      <nav class="navbar-expand-lg navbar-light d-flex">
+           <div class="container-fluid d-flex">
+                <div class="navLeft    ">
+                    <div class="  d-flex justify-content-between">
+                       
+                       <a style="display: flex; text-decoration: none;" href="#" class="navbar-brand">
+                          <span class="logo">coursera</span>
+                       </a>
+                       <button class="navbar-toggler dropdown-toggle " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"  >
+                          <span class="navbar-toggler-icon"></span>
+                       </button>
+                       <div class="collapse navbar-collapse nav-item dropdown " id="navbarNavDropdown"  >
+                                
+                         <!-- <div class="dropdown">  -->
+                        <button class="explore  drop-btn dropdown ">Explore <i class="fa fa-caret-down"></i></button>
+                       <div>
+                        <div class="dropdown-content" style="width: 350px; height: 600px; overflow-y: scroll; padding: 8px; ">
+                          <div>
+                            <div>
+                                <h3 style="padding-left: 15px; font-size: 16px; font-weight: 500;">Goals</h3>
+                                <a href="#">Take a free course  </a>
+                                <a href="#">Earn a Degree </a>   
+                                 <a href="#">Earn Certificate </a>  
+                                 <a href="#">Launch or advance your career  </a>
+                            </div>
+                            <div>
+                                <h3 style="padding-left: 15px; font-size: 16px; font-weight: 500;">Subjects</h3>
+                                <a href="#">Data Science  </a>  
+                                 <a href="#">Business </a>  
+                                 <a href="#">Computer Science </a>   
+                                 <a href="#">Information Technology </a>  
+                                 <a href="#">Language Learning </a>   
+                                 <a href="#">Health  </a>
+                                <a href="#">Personal Development </a> 
+                                 <a href="#">Physical Science and Engineering  </a>
+                                <a href="#">Social Sciences  </a>
+                                <a href="#">Arts and Humanities </a>  
+                                 <a href="#" style="margin-bottom: 55px;">Math and Logic  </a>
+                                <button style="margin-bottom: 120px; margin-left: 20px; background-color: transparent; font-size: 16px; padding: 4px 10px; cursor: pointer;" class="btn-primary text-primary" > 
+                             Browse  All Subjects</button>
+                            </div>
+                        </div>
+                        </div>
+                       </div>
+                       </div>
+                        </div>
+
+                       <div class="search" >
+                          <input type="text" placeholder="What do you want to learn?" class="want" >
+                         <i type="button" class="material-icons material-icons" >search</i>
+                       </div>
+                      <div class="navRight " style="margin-left: 130px;">
+                        <a href="#" class="nav-item">For Enterprise</a>
+                        <a href="#" class="nav-item">For Student</a>
+                        <a href="" class="log nav-item">Log in</a>
+                        <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="explore  text-white" type="button">
+                           Join for free
+                        </button>
+                        <div class="modal  " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                              <div class="modal-content">
+                                <div class="modal-header" style="border: none;">
+                                    <button type="button" class="btn-close btn-lg" data-bs-dismiss="modal" aria-label="Close" style="font-size: 20px; color: black;" ></button>
+                                </div>
+                                <div class="modal-body container" style="padding-left: 10%; padding-right: 0%; ">
+                                    <div class="container ">
+                                        <h3 style="font-weight: 400; font-size: 35px; text-align: center;">Sign Up</h3>
+                                        <p style="text-align: center; font-size: 16px; margin-bottom: 20px;">Learn on your own time from top <br> universities and businesses.</p>
+                                        <div>
+                                            <label style="font-weight: 700; font-size: 14px; color: rgba(0, 0, 0, 0.8);">FULL NAME</label><br>
+                                            <input type="text" placeholder="Enter your Full Name" style="width: 90%; text-indent: 13px; margin-bottom: 8px; font-size: 16px; height: 50px; color: gray;">
+                                        </div>
+                                        <div>
+                                            <label style="font-weight: 700; font-size: 14px; color: rgba(0, 0, 0, 0.8);">EMAIL</label><br>
+                                            <input type="text" placeholder="name@email.com" style="width: 90%; font-size: 16px; margin-bottom: 8px;  text-indent: 13px; height: 50px; color: gray;">
+                                        </div>
+                                        <div class="mt-3">
+                                            <label style="font-weight: 700; font-size: 16px; color: rgba(0, 0, 0, 0.8);">PASSWORD</label><br>
+                                            <input type="text" placeholder="Create password" style="width: 90%; font-size: 16px; margin-bottom: 8px; text-indent: 13px; height: 50px; color: gray;">
+                                        </div>
+                                        <a href="#" style=" text-decoration: none; text-align: left; font-size: 14px;">Between 8 and 72 characters</a><br><br><br>
+                                        <div>
+                                            <button style="background-color: #0056D2; color: white; font-size: 16px;  font-weight: 400; border: none; border-radius: 5px; width: 90%; height: 50px;">Join for Free</button>
+                                        </div>
+                                        <div style="display: flex; padding-top: 10px;">
+                                            <hr width="40%" style="height: 0.5px;">
+                                            <span style="padding-left: 15px; padding-right: 15px; font-size: 13px;">or</span>
+                                            <hr width="40%" style="height: 0.5px;">
+                                        </div>
+                                        <div class="mt-2">
+                                            <button style="width: 90%; height: 50px; border-radius: 3px; font-weight: 700; background-color: transparent; border: 1px solid black; font-size: 14px;"><img src=" loe1.PNG"> Continue with Google</button><br><br>
+                                            <button style="width: 90%; height: 50px; border-radius: 3px; font-weight: 700; background-color: transparent; border: 1px solid black; font-size: 14px;"><img src=" loe2.PNG">Continue with Facebook</button><br><br>
+                         
+                                        </div>
+                                        <div style="text-align: center;">
+                                            <span style="font-size: 15px;">Already on Coursera?</span> <span class="text-primary" style="font-size: 15px;">Log in</span> <br> <br>
+                                        </div>
+                                        <hr style="height: 0.2px;">
+                                        <div style="text-align: center;">
+                                            <a href="#" style="text-decoration: none; font-size: 15px; margin: 15px 0px;" class="text-primary">Sign up with your organization</a>
+                                        </div><br>
+                                        <div style="text-align: center; font-size: 12px;">
+                                            I accept Coursera's <span style="text-decoration: underline;">Terms of Use</span> <span style="text-decoration: underline;">and Privacy Notice. </span> <br> Having trouble logging in? <span style="text-decoration: underline;">Learner help center</span>
+                                        </div><br>
+                                        <div style="text-align: center; font-size: 12px; margin-bottom: 20px;">
+                                            <span>This site is protected by reCAPTCHA Enterprise and <br> the Google</span>
+                                            <span style="text-decoration: underline;">Privacy Policy</span> 
+                                            <span>and</span>
+                                            <span style="text-decoration: underline;">Terms of Service</span>
+                                            <span>apply.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                  </div>
+          
+                      </div>
+                </div>
+            </div>
+        </div>
+     
+              </div>
+           
+           
+        </nav> 
+   
+       
+    <div class="alert alert-primary alert-dismissible card container-fluid " style="text-align: center; height: 85px; color: black; font-size: 17px;">
+        Build job-ready skills to stand out in your job search with a <strong style="text-decoration: underline;" class="text-primary">career credential from Google.</strong>
+        <a href="#" class="close" data-dismiss="alert"  ><i class="material-icons" style="color: black; background-color: white; font-size: 25px; padding: 5px; border: 1px solid black; margin-left: 100px;">close</i></a>
+    </div>
+      <div style="display: flex; height: 82vh; width: 100%;  ">
+         <div class="col-sm-7" style="padding-left: 8%;">
+            <p class="limits  " style="margin-top: 40px;">Learn Without <br> Limits</p>
+            <p style="font-size: 20px; line-height: 28px ; font-weight: 400; color: #1f1f1f;">
+                Build skills with Courses,Certificates,and degrees online from world-
+                Class universities and companies.
+            </p>
+            <div style="margin-top: 40px; display: flex;" class="button">
+                <button class="butt1 ">Join for free</button>
+                <button class="butt2">Try Coursera for Business</button>
+            </div>
+         </div>
+         <div class="col-sm-5" >
+            <img src="hero-b.png" alt="" class="show" style="margin-left: 80px;"    >   
+         </div>
+     </div>
+     <div style="width: 100%; height: 40vh; background-color: rgb(245,245,245); text-align: center; padding: 50px 7%;" class="container-fluid">
+         <p style="color:#0056D2;font-size: 28px;font-weight: 600; padding-top: -10px; margin-top: -5px;  "> <span style="color: black; font-size: 28px;">We collaborate with</span>
+            200+leading Universities and Companies</p>
+                <div style="display: flex;">
+                        <div style="margin-top: 35px;">
+                            <img src="IBM.PNG" alt="">
+                        </div>
+                </div>
+        </div>
+        <div style="color: white; background-color: white; width: 100%; height: fit-content; padding: 3% 7%; text-align: left;">
+                <p style="font-size: 20px; font-weight: 600; color: #382d8b; line-height:28px;">Professional Certificates</p>
+                <h2 style="color: #1f1f1f; font-size: 44px;line-height: 52px; font-weight: 400;">Get job-ready for an in-demand career</h2>
+                <p style="color: #1f1f1f; font-size: 22px; line-height: 42px; font-weight: 400;">Break into a new field like information technology or data science. No prior experience necessary to get started.</p>
+                <div id="carouselExampleControlsNoTouching" class="carousel  slide   " data-bs-touch="false" data-bs-interval="false">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="see.PNG"  style="margin: 5px;" >
+                        <img src="see1.PNG" alt="" style="margin: 5px;">
+                        <img src="see.PNG"  style="margin: 5px;" >
+                        <img src="see1.PNG" alt=""  >
+                      </div>
+                      <div class="carousel-item"   >
+                        <img src="ask1.PNG" alt="" style="margin: 5px;">
+                        <img src="ask.PNG" alt="" style="margin: 5px;">
+                        <img src="ask1.PNG" alt="" style="margin: 5px;">
+                        <img src="ask.PNG" alt="" style="margin: 5px;">
+                      </div>
+                      <div class="carousel-item" >
+                        <img src="ask4.PNG" alt="" style="margin: 5px;">
+                        <img src="ask2.PNG" alt="" style="margin: 5px;">
+                        <img src="ask4.PNG" alt="" style="margin: 5px;">
+                        <img src="ask2.PNG" alt="" style="margin: 5px;">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" style="color: black;" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                      <span class="carousel-control-prev" aria-hidden="true"><i class="fa fa-chevron-left" style="font-size: 30px; color: black; margin-left: -40px;"></i></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                      <span class="carousel-control-next " aria-hidden="true"><i class="fa fa-chevron-right" style="font-size: 30px; color: black;"></i></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                    <p style="text-align: center; color: blue; font-size: 18px; margin: 20px 0px;">Explore Certificates</p>
+            </div>
+            <div>
+               <div style="padding-left: 6%;">
+                <p style="font-size: 20px; font-weight: 600; color: #382d8b; line-height:28px; ">Master's and Bachelor's Degrees</p>
+                <h2 style="color: #1f1f1f; font-size: 44px;line-height: 52px; font-weight: 400;">Find a top degree that fits your life</h2>
+                <p style="color: #1f1f1f; font-size: 22px; line-height: 42px; font-weight: 400;">Breakthrough pricing on 100% online degrees from top universities.
+                </p>
+               </div>
+               <div id="carouselExampleControlsNoTouchingg" class="carousel  slide   " data-bs-touch="false" style="margin-left: 3%;" data-bs-interval="false">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" style="margin-left: 45px;">
+                    <img src="car.PNG"  style="margin: 10px;" >
+                    <img src="car1.PNG" alt="" style="margin: 10px;">
+                    <img src="car3.PNG"  style="margin: 10px;" >
+                    <img src="car2.PNG" alt="" style="margin: 10px;"  >
+                  </div>
+                  <div class="carousel-item" style="margin-left: 45px;"  >
+                    <img src="car4.PNG" alt="" style="margin: 10px;">
+                    <img src="car5.PNG" alt="" style="margin: 10px;">
+                    <img src="car.PNG" alt="" style="margin: 10px;">
+                    <img src="car1.PNG" alt="" style="margin: 10px;">
+                  </div>
+                  <div class="carousel-item"  style="margin-left: 45px;">
+                    <img src="car3.PNG" alt="" style="margin: 10px;">
+                    <img src="car2.PNG" alt="" style="margin: 10px;">
+                    <img src="car5.PNG" alt="" style="margin: 10px;">
+                    <img src="line - Copy.PNG" alt="" style="margin: 10px;">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" style="color: black;" type="button" data-bs-target="#carouselExampleControlsNoTouchingg" data-bs-slide="prev">
+                  <span class="carousel-control-prev" aria-hidden="true"><i class="fa fa-chevron-left" style="font-size: 30px; color: black; margin-left: -40px;"></i></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouchingg" data-bs-slide="next">
+                  <span class="carousel-control-next " aria-hidden="true"><i class="fa fa-chevron-right" style="font-size: 30px; color: black;"></i></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+</body>
+
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="bootstrap.bundle.min.js"> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>

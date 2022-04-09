@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="../js/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(chatbckpro.png);
+        }
+        nav{
+            background-color:  rgb(34, 46, 55);
+            margin: none;
+            height: 65px;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .back{
+            position: relative;
+            top: 10px;
+            left: 2px;
+        }
+        .navleft{
+            width: 200px;
+        }
+        .navright{
+            width: 85px;
+            display: flex;
+            justify-content: space-between; 
+            margin-top: 12px;
+        }
+        
+        .messcon{
+            /* background-color: aqua; */
+            width: 360px;
+            height: 60px;
+            position: fixed;
+            top: 580px;
+            display: flex;
+            justify-content: space-between;
+            padding: 0px 5px;
+        }
+        .text{
+            width: 170px;
+            border: none;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0);
+        }
+        .text:focus{
+            outline: none;
+            color: white;
+        }
+        .ic{
+            position: relative;
+            top: 15px;
+        }
+        .ic2{
+            position: relative;
+            top: 14px;
+            left: 18px;
+        }
+        .mess{
+            width: 295px;
+            height: 50px;
+            border-radius: 25px;
+            background-color: rgb(34, 46, 55);
+            display: flex;
+            justify-content: space-between;
+            padding: 3px 10px;
+        }
+
+        .chatright{
+            background-color: rgb(5, 70, 64);
+            border-radius: 5px;
+            margin-left: auto;
+            height: 35px;
+            padding: 5px;
+            margin-right: 10px;
+            margin-top: 10px;
+        }
+        .time{
+            font-size: 7px;
+            font-weight: 1px;
+            margin-top: -6px;
+            margin-left: 38px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="boottabs.html">
+            <button class="btn btn-outline-light border-0 p-0 back"><i class="	fa fa-arrow-left"></i></button>
+        </a> 
+       <a href="whatsappmedia.html">
+        <div class="navleft media mb-3">
+            <div style="border-radius: 100%; width: 50px; height: 50px; overflow: hidden;">
+                <img src="../vs images.css/chatbckpro.png" alt="" width="50px">
+               </div>
+        <h5 class="media-body m-2 " style="color: white;">me, myself & I</h5>
+        </div>
+       </a> 
+        <div class="navright">
+          <i class="fa fa-video-camera text-light fa-lg"></i>
+          <i class="fa fa-phone text-light fa-lg"></i>
+          <i class="fa fa-ellipsis-v text-light fa-lg"></i>
+        </div>
+    </nav>
+
+<div class="chatright" style="width: 75px;">
+    <p class="text-light m-0">Hello</p>
+    <p class="time text-light">03:46</p>
+</div>
+
+    <div class="messcon">
+        <div class="mess">
+            <i class="	fa fa-smile-o ic fa-lg" style="color: rgb(140, 144, 148);"></i>
+            <input type="text" placeholder="Type a message" class="text">
+            <i class="	fa fa-paperclip ic fa-lg" style="color: rgb(140, 144, 148);"></i>
+            <i class="	fa fa-camera ic fa-lg" style="color: rgb(140, 144, 148);"></i> 
+        </div>
+        <div style="border-radius: 100%; width: 50px; height: 50px; background-color: rgb(8, 250, 169);">
+            <i class="fa fa-microphone text-light fa-lg ic2"></i> 
+        </div>
+    </div>
+    
+<script src="../js/popper.min.js"></script>
+<script src="../js/latestcompiled.min.js"></script>
+</body>
+</html>

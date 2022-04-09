@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="disp1"></h1>
+    <h2 id="disp2"></h2>
+
+    <script>
+        let index = 0;
+        let ArrayIndex = 0;
+        let clear
+        let text1
+
+        let TheArray = ["We Can Do This!", "YES, We Did It!"]
+        function plsWork() {
+
+        if (index<TheArray[ArrayIndex].length) {
+          
+
+            clear = setTimeout(function plsNau(){
+            let text1 = TheArray[ArrayIndex].substr(index,1)
+            let text2 = TheArray[1].substr(index,1)
+            index++
+            // console.log(ArrayIndex);
+
+            // console.log(text1);
+            disp1.innerHTML+=text1;
+            disp2.innerHTML+=text2
+            if (disp1.innerHTML.length==15) {
+                alert('This is a delay, Kindly read the statement on diplay. Thankyu!')
+            }
+          plsWork()
+
+            }, 100)
+          }  
+
+        if (index>=TheArray[ArrayIndex].length) {
+           setTimeout(function plsNa(){
+            text1 = TheArray[ArrayIndex].substr(0,disp1.innerHTML.length -1)
+            let text2 = TheArray[1].substr(0,disp2.innerHTML.length -1)
+            disp1.innerHTML=text1;
+            disp2.innerHTML=text2
+            repeat()
+            plsWork()
+        //   loader()
+         
+            }, 100)
+        }
+
+        }
+
+function loader(params) {
+    if (ArrayIndex == TheArray.length-1) {
+                index = 0;
+                ArrayIndex= 0;
+            
+            }
+}
+        function repeat() {
+            if (disp1.innerHTML.length==0) {
+                index = 0
+            }
+        }
+
+        plsWork() 
+        
+        
+    </script>
+</body>
+</html>

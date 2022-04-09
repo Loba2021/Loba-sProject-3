@@ -1,0 +1,149 @@
+nav{
+    background-color: rgb(249, 249, 250);
+    display: flex;
+    justify-content: space-around;
+}
+.flexer{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    margin: 0px;
+    position: relative;
+    top: -30px;
+    left: 400px;
+}
+img{
+    margin-top: 20px;
+    margin-left: 100px;
+}
+.drophov{
+    display: none;
+    /* animation-name: me;
+    animation-duration: 0.5s; */
+    position: absolute;
+    top: 20px;
+    /* left: -5px; */
+    
+    /* z-index: 1; */
+}
+
+.drophov1{
+    display: none;
+    /* animation-name: me;
+    animation-duration: 0.5s; */
+    position: absolute;
+    top: 20px;
+    /* left: -5px; */
+    
+    /* z-index: 1; */
+}
+h4{
+    text-align: center;
+}
+.rightcon{
+    height: 500px;
+    width: 350px;
+    position: relative;
+    top: 70px;
+    left: 20px;
+    background-color: white;
+}
+.leftcon{
+    height: 550px;
+    width: 750px;
+    position: relative;
+    top: -440px;
+    left: 500px;
+    background-color:white;
+    padding: 10px;
+    overflow: hidden;
+}
+.secta{
+    height: 250px;
+    width: 750px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.block{
+    height: 250px;
+    width: 200px;
+    padding: 10px;
+    background-color: white;
+}
+.drophov1{
+    animation-name: me1;
+       animation-duration: 0.4s;
+       box-shadow: 10px 0px 10px black; 
+}
+ .drophov1 .over1{
+       background-color: rgb(249, 249, 250);
+       display: block;
+       color: black;
+       text-decoration: none;
+       text-align: center;
+   } 
+
+.test1:hover .drophov1 {
+    /* z-index: 10; */
+    color: black;
+    display: block;
+    height: 650px;
+    width: 1300px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: -370px;
+    text-decoration: none;
+    content: '';
+} 
+  
+   .drophov{
+    animation-name: me;
+    animation-duration: 0.4s; 
+    box-shadow: 0px 0px 10px black;  
+   }
+.drophov a{
+    background-color:  rgb(249, 249, 250);
+    display: block;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+.test:hover .drophov {
+    z-index: 10;
+    color: black;
+    display: block;
+    width: 200px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: -20px;
+}
+.test{
+    cursor: pointer;
+}
+
+@keyframes me1{
+    from{
+        opacity: 0;
+        transform: scale(0.8);
+        }
+   to{
+       opacity: 1;
+        transform: scale(1.05);
+
+      }
+}
+
+@keyframes me{
+    from{
+        opacity: 0;
+        transform: scale(0.6);
+        }
+   to{
+       opacity: 1;
+        transform: scale(1.2);
+
+      }
+}

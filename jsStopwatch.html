@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="../js/jquery.min.js"></script>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            background-color: black;
+            background: url(../html&css/stopwatchbg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover  ;
+        }
+        
+        .numbers{
+            font-size: 100px;
+        }
+        .inpnums {
+            border: 1px solid green;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 30px;
+            background-color: black;
+            color: white;
+            /* width: 150px; */
+        }
+        .inpcon{
+            position: relative;
+            left: -200px;
+        }
+        .numcon{
+            width: 50%; 
+            display: flex; 
+            justify-content: space-around;
+            margin-top: 20px;
+            background-color: black;
+            margin-left: -30px;
+        }
+    </style>
+</head>
+<body>
+   <section style="position: absolute; top: 100px; left: 500px;">
+    <section class="inpcon">
+        <input type="text"  id="inp2" value="00" class="inpnums">
+        <input type="text"  id="inp" value="00" class="inpnums">
+    </section>
+    <div class="numcon text-light">
+
+        <div class="numbers" id="shownum2">00</div>
+        <div class="numbers" >:</div>
+        <div class="numbers" id="shownum">00</div>
+
+    </div>
+    <div class="mt-5 ml-3">
+        <button onclick="startTime()" class="btn btn-outline-success">startTime</button>
+    <button onclick="stopTime()" class="btn btn-danger">Reset</button>
+    <button onclick="pauseTime()" id="pause" class="btn btn-success">Pause</button>
+    </div>
+   </section>
+
+    <script>
+        let newNum = null;
+        let newNum2 = null;
+        let setnum = null;
+        let setnum2 = null;
+        let pausecount=0;
+        let clear;
+        
+        function goTime(){
+            if (document.getElementById('inp').value!='' && (document.getElementById('inp2').value!='')) {
+                if (document.getElementById('shownum').innerHTML == '1' && document.getElementById('shownum2').innerHTML == '0'){
+                clearInterval(clear)
+                alert('Time up!')
+            }
+                if (setnum == 0 && setnum2!=0) {
+                setnum2--
+                setnum = 60
+            } 
+            
+            console.log(setnum)
+            document.getElementById('shownum').innerHTML = setnum
+            document.getElementById('shownum2').innerHTML = setnum2
+            setnum-- 
+            }
+            
+        }
+        function startTime() {
+            setnum2 = Number(document.getElementById('inp2').value)
+            setnum = Number(document.getElementById('inp').value)
+            clear = setInterval(goTime, 1000)  
+        }
+        function stopTime() {
+                clearInterval(clear)
+                document.getElementById('shownum').innerHTML = '00'
+                document.getElementById('shownum2').innerHTML = '00'
+        }
+        function pauseTime() {
+            pausecount++
+            console.log(pausecount);
+            if (pausecount==1) {
+                clearInterval(clear)
+            newNum = document.getElementById('shownum').innerHTML
+            newNum2 = document.getElementById('shownum2').innerHTML
+            document.getElementById('pause').innerHTML="PLAY"
+            }
+            else if (pausecount==2 && document.getElementById('pause').innerHTML=="PLAY") {
+            document.getElementById('pause').innerHTML="PAUSE"  
+            document.getElementById('shownum').innerHTML=""
+            document.getElementById('shownum2').innerHTML=""
+             setnum=newNum;
+             setnum2=newNum2;
+            clear = setInterval(goTime, 1000)  
+            //  goTime();
+            //  document.getElementById('shownum').innerHTML = setnum
+            //  document.getElementById('shownum2').innerHTML = setnum2
+             pausecount=0;
+            }
+        }
+    </script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/latestcompiled.min.js"></script>
+</body>
+</html>

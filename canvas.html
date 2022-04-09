@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="canfas" width="500" height="350" style="border: 1px solid grey;"></canvas>
+    <button onclick="draw()">btn1</button>
+    <button onclick="drew()">btn2</button>
+    <button onclick="draw()">btn3</button>
+
+    <script>
+        let x,y
+        let x2,y2
+        let xx,yy
+        let xx2,yy2
+        let canDraw=false
+
+        
+
+        // canfas.onmousedown=function(e){
+            
+        //     canDraw=true;
+        //     canfas.onmousemove=function(e){
+        //         if (canDraw) {
+        //             xx2= e.offsetX
+        //             yy2= e.offsetY
+        //             drew()
+        //             xx= e.offsetX
+        //             yy= e.offsetY
+        //         }
+        //     }
+        // }
+
+        canfas.onmouseup=function(e){
+            canDraw=false
+        }
+        function draw(){
+            let canfa1 = document.getElementById('canfas');
+            let ctx = canfa1.getContext('2d')
+            // ctx.fillstyle = 'lightgreen'
+            // ctx.fillRect(210,110,120,90)
+            ctx.moveTo(x,y)
+            ctx.lineTo(x2,y2)
+            ctx.lineWidth = 2;
+            ctx.strokeStyle = 'red'
+            ctx.stroke()
+
+            canfas.onmousedown=function(e){
+            x= e.offsetX
+            y= e.offsetY
+            canDraw=true;
+            canfas.onmousemove=function(e){
+                if (canDraw) {
+                    x2= e.offsetX
+                    y2= e.offsetY
+                    draw(),
+                    x= e.offsetX
+                    y= e.offsetY
+                }
+            }
+            
+        }
+
+        }
+
+
+        function drew(){
+            // let canfa = document.getElementById('canfas');
+            // let ctj = canfa.getContext('2d');
+            // ctj.moveTo(xx,yy);
+            // ctj.moveTo(xx2,yy2);
+            // ctj.lineWidth = 5;
+            // ctj.strokeStyle = 'red'
+            // ctj.stroke()
+            let canfa1 = document.getElementById('canfas');
+            let ctx = canfa1.getContext('2d')
+            // ctx.fillstyle = 'lightgreen'
+            // ctx.fillRect(210,110,120,90)
+            ctx.moveTo(x,y)
+            ctx.lineTo(x2,y2)
+            ctx.lineWidth = 5;
+            ctx.strokeStyle = 'red'
+            ctx.stroke()
+
+           canfas.onmousedown=function(e){
+            x= e.offsetX
+            y= e.offsetY
+            canDraw=true;
+            canfas.onmousemove=function(e){
+                if (canDraw) {
+                    x2= e.offsetX
+                    y2= e.offsetY
+                    drew(),
+                    x= e.offsetX
+                    y= e.offsetY
+                }
+            }
+            
+        }
+
+        }
+    </script>
+</body>
+</html>

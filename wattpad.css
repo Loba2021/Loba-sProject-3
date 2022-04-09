@@ -1,0 +1,259 @@
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.11);
+}
+.dark-mode {
+    background-color: black;
+    color: white !important;
+    }
+.linksId{
+    color: rgb(255, 80, 10)!important;
+}
+.fix{
+    position: fixed;
+    right: 1px;
+    top: 70%;
+}
+.leftnav{
+    width: 35%;
+    /* background-color: pink; */
+    display: flex;
+    justify-content: space-around;
+    height: 28px;
+    /* padding-top: 15px; */
+    /* margin-left: 100px; */
+
+}
+.rightnav{
+    width: 35%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.links{
+    color: rgb(47, 47, 49);
+}
+.links:hover{
+    color: rgb(47, 47, 49);
+}
+.navbtn{
+    border-radius: 30px;
+    border: 0px;
+    background-color: rgb(52, 25, 94);
+    color: white;
+    width: 150%;
+    height: 45px;
+}
+
+.slide{
+    width: 70%;
+    position: relative;
+    left: 200px;
+    /* top: 50px; */
+    /* background-color: red; */
+}
+.slide2{
+    width: 70%;
+    position: relative;
+    left: 200px;
+    /* top: 200px; */
+    /* background-color: red; */
+}
+.slide3{
+    width: 70%;
+    position: relative;
+    left: 200px;
+    top: 200px;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    /* overflow-x: scroll;
+    width: 700px; */
+}
+
+.box1{
+    /* background-color: rgb(90, 90, 92); */
+    border-radius: 5px;
+    color: white;
+    width: 200px;
+    height: 300px;
+    overflow: hidden;
+}
+.boxes{
+    /* background-color: rgb(90, 90, 92); */
+    border-radius: 5px;
+    color: white;
+    width: 200px;
+    height: 300px;
+    margin-left: 10px;
+    /* box-shadow: 10px 0px  100px 15px black; */
+
+}
+.prevslide{
+    width: 60%;
+    position: relative;
+    top: 100px;
+    left: 285px;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: aqua */
+}
+.prevbut{
+    background-color: rgb(17, 17, 17);
+    border-radius: 30px;
+    padding: 10px;
+    color: white;
+    width: 150px;
+    border: 0px;
+}
+.prevbut:hover{
+    background-color: rgb(85, 85, 85);
+}
+.add{
+    width: 40px;
+    height: 40px;
+    /* font-size: 30px; */
+    text-align: center;
+    border-radius: 50%;
+    border: 0px;
+    background-color: rgb(221, 232, 241);
+    align-items: center;
+    margin-top: 5px;
+}
+.browse{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0px;
+    width: 600px;
+    padding-bottom: 60px;
+}
+.main1{
+    display: none !important;
+}
+.smnav, .smfist, .homesect1, .homesect2, .bigdiv, .homesect3, .thecon{
+    display: none;
+}
+
+
+@media  (max-width: 576px){
+    .thecon{
+        display: inherit;
+    }
+    body{
+        background-color: rgb(2, 2, 3) !important;
+        height: 2000px;
+    }
+    .navbar, .prevslide, .slide, .slide2, .slide2con, .slide3, .stubborntext{
+        display: none !important;
+    }
+    .smnav{
+        display: inherit;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .smfist{
+        display: inherit;
+        width: 100%;
+        background-color: red;
+        color: white;
+    }
+    .main1{
+        display: inherit !important;
+        background-color: red !important;
+        width: 400px !important;
+        position: fixed;
+        top: 0px !important;
+    }
+    .nav-tabs, .nav-tabs .active, .bg{
+        border: none !important;
+        background-color: rgb(2, 2, 3) !important;
+    }
+    .nav-tabs .active{
+        border-bottom: 3px solid rgb(255, 80, 10) !important;
+        color:  rgb(255, 80, 10)!important;
+        background-color: rgb(2, 2, 3) !important;
+
+    }
+    .nav-tabs .nav-item{
+        width: 10%;
+        margin-left: 30px;
+        text-align: center;
+    }
+    .nav-tabs .nav-link{
+        color: whitesmoke
+    }
+    .homesect1{
+        display: inherit;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        border-bottom: 0.5px solid rgb(208, 209, 211);
+    }
+    .navbtn2{
+        border-radius: 30px;
+        border: 0px;
+        background-color: rgb(137, 100, 197);
+        color: black;
+        width: 120px;
+        height: 45px;
+    }
+    .homesect2{
+        display: inherit;
+        /* padding: 10px; */
+        color: white;
+        width: 100%;
+        /* overflow: scroll; */
+        /* height: 300px; */
+        /* background-color: red; */
+        overflow: auto;
+    }
+    .homesect2::-webkit-scrollbar{
+        display: none;
+    }
+    .bigdiv{
+        width: 1000px;
+        /* background-color: white; */
+        /* height: 300px; */
+        display: inherit;
+        display: flex;
+    }
+    .contents{
+        width: 300px !important;
+        height: 270px;
+        margin: 10px;
+        padding: 10px;
+    }
+    .carocon{
+        height: 150px;
+        /* background-color: red; */
+    }
+    .homesect3{
+        color: white;
+        /* margin-top: 30px; */
+        display: inherit;
+        overflow: auto;
+    }
+    .box1{
+        height: 170px;
+        width: 120px;
+        margin: 5px;
+    }
+    .homesect3::-webkit-scrollbar{
+        display: none;
+    }
+    /* .cam{
+      margin: 95px;
+      margin-top: 150px;
+    } */
+
+}

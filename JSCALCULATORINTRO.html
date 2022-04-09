@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="../js/jquery.min.js"></script>
+    <style>
+        body {
+            background-color: lightblue;
+            display: flex;
+            justify-content: center;
+            padding-top: 100px;
+        }
+
+        .interface {
+            width: 270px;
+            height: 480px;
+            background-color: white;
+            align-items: center;
+            border: 1px solid rgb(21, 22, 75);
+            border-radius: 22px;
+            /* padding: 10px; */
+        }
+
+        .operadisp {
+            /* background-color: red; */
+            height: 40px;
+            width: 34%;
+            text-align: right;
+        }
+
+        .soldisp {
+            background-color: white;
+            height: 45px;
+            width: 100%;
+            margin-top: 10px;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .calcoperas {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            margin: 10px;
+        }
+
+        .buttons {
+            width: 50px;
+            height: 50px;
+            background-color: white;
+            margin: 5px;
+            border-radius: 50%;
+        }
+
+        .buttons:hover {
+            border-radius: 50%;
+            background-color: white;
+            box-shadow: 0px 5px 2px rgb(121, 121, 121);
+
+        }
+
+        .screen {
+            margin-left: -100px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="interface">
+        <section class="p-3">
+            <div class="d-flex justify-content-between screen">
+                <div class="operadisp" id="firstno"></div>
+                <div class="operadisp" id="operator"></div>
+                <div class="operadisp" id="secondno"></div>
+            </div>
+            <div class="soldisp" id="finalanswer"></div>
+        </section>
+        <hr class="bg-dark">
+        <div class="calcoperas">
+            <button class="buttons btn text-danger" onclick="dot()">C</button>
+            <button class="buttons btn text-danger">(</button>
+            <button class="buttons btn text-danger">)</button>
+            <button class="buttons btn text-danger" onclick="operator(this)" id="div" value="/">/</button>
+            <button class="buttons btn" onclick="number('7')">7</button>
+            <button class="buttons btn" onclick="number('8')">8</button>
+            <button class="buttons btn" onclick="number('9')">9</button>
+            <button class="buttons btn text-danger" onclick="operator(this)" id="mult" value="*">*</button>
+            <button class="buttons btn" onclick="number('4')">4</button>
+            <button class="buttons btn" onclick="number('5')">5</button>
+            <button class="buttons btn" onclick="number('6')">6</button>
+            <button class="buttons btn text-danger" onclick="operator(this)" id="minus" value="-">-</button>
+            <button class="buttons btn" onclick="number('1')">1</button>
+            <button class="buttons btn" onclick="number('2')">2</button>
+            <button class="buttons btn" onclick="number('3')">3</button>
+            <button class="buttons btn text-danger" onclick="operator(this)" id="plus" value="+">+</button>
+            <button class="buttons btn" onclick="operator(this)" id="perc" value="perc">%</button>
+            <button class="buttons btn" onclick="number('0')">0</button>
+            <button class="buttons btn" onclick="number('.')">.</button>
+            <button class="buttons btn" style="background-color: red;" onclick="equalto()">=</button>
+        </div>
+
+    </div>
+    <script>
+        function number(params) {
+
+        }
+
+
+
+
+        let no1, no2, ans, opera = false, press=0, equalpress=false;
+        let calc, operapress=0, numb=false;
+        let firstno = document.getElementById('firstno')
+        let operatorr = document.getElementById('operator')
+        let secondno = document.getElementById('secondno')
+        let finalanswer = document.getElementById('finalanswer')
+        function dot() {
+            document.getElementById('dispopera').value = "";
+
+        }
+
+        function number(params) {
+            numb=true;
+            if (opera==false && equalpress==true && numb==true && operapress==1) {
+                equalpress=false;
+                opera=false;
+                firstno.innerHTML="";
+                secondno.innerHTML="";
+                operatorr.innerHTML="";
+                finalanswer.innerHTML="";
+                
+            }
+            if (opera == false && equalpress==false) {
+                firstno.innerHTML += params
+                no1 = Number(firstno.innerHTML)
+                console.log(no1);
+
+            }
+
+            else if (opera == true && equalpress==false) {
+                secondno.innerHTML += params
+                no2 = Number(secondno.innerHTML)
+                console.log(no2);
+                arith();
+            }
+           
+            else if (opera == true && equalpress==true) {
+                no1=ans;
+                secondno.innerHTML += params
+                no2 = Number(secondno.innerHTML)
+                console.log(no2);
+                arith();
+            }
+        }
+
+        function arith() {
+            if (calc == '+') {
+                    ans = no1 + no2;
+                }
+                else if (calc == '-') {
+                    ans = no1 - no2;
+                }
+                else if (calc == '/') {
+                    ans = no1 / no2;
+                }
+                else if (calc == '*') {
+                    ans = no1 * no2;
+                }
+                else if (calc == 'perc') {
+                    ans = no1 / 100;
+                }
+                else {
+                }
+        }
+
+
+        function equalto() {
+            equalpress=true;
+            opera=false;
+            console.log(opera,numb);
+            console.log(ans);
+            finalanswer.innerHTML=ans;
+        }
+        function clear() {
+            alert()
+            console.log(screen)
+            document.getElementById('dispopera').value = "";
+        }
+        function operator(params) {
+            operapress++
+            if (operapress>1) {
+                firstno.innerHTML="";
+                firstno.innerHTML=ans;
+                secondno.innerHTML="";
+            }
+            operatorr.innerHTML="";
+            console.log(press);
+            console.log(params.innerHTML)
+            calc = params.innerHTML;
+            operatorr.innerHTML = calc
+            opera = true;
+            console.log(opera);
+        }
+        // function Hello(parameter1, we) {
+        //     console.log(parameter1);
+        // }
+        // Hello(12)
+    </script>
+
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/latestcompiled.min.js"></script>
+</body>
+
+</html>

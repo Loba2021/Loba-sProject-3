@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+let p= new Promise((resolve,reject)=>{
+    setTimeout(() => {
+        return resolve(20)
+    }, 3000)
+})
+
+for (let index = 0; index < 10; index++) {
+    console.log(index);
+
+    if (index==5) {
+        break
+    }  
+    //   use push anytime you use math.random for two arrays
+}
+
+async function hey(){
+console.log(12345);
+let b = 0
+b = await p
+console.log(b);
+// setTimeout(function name(params) {
+//     b=20
+// }, 2000)
+// console.log(b);
+    }
+hey()
+</script>

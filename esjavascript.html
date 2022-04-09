@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES Javasript Version_2.0</title>
+</head>
+<body>
+    
+
+    <script>
+        // data-destruction
+
+        let a = [1,2,3,4,5,6]
+        let [b,,c,...h] = a
+        console.log(b,c,h);
+
+        // spread-operator works like push
+        let firstvar = [1,2,3]
+        let secondvar = [4,5,6]
+        let thirdvar = [...firstvar, ...secondvar]
+        console.log(thirdvar);
+    </script>
+    <!-- json-server --watch "name of folder/name of file.json" -->
+</body>
+</html>

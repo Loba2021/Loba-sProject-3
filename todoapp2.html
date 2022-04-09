@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="../js/jquery.min.js"></script>
+    <link rel="stylesheet" href="todoapp2.css">
+</head>
+<body>
+<div class="content">
+    <textarea placeholder="Description of Event" id="event" value="lil" class="textarea"> </textarea>
+
+<div class="btncons">
+    <button class="btn btn-success mt-1 w-100" onclick="theEvent()">Add</button>
+    <h3 class="text-dark text-center">Set-time</h3>
+    <div class="w-100 d-flex justify-content-between mt-1">
+        <input type="number" class="inpnums" id="inpnum2" placeholder="Hr">
+        <span class="mt-2">:</span>
+        <input type="number" class="inpnums" id="inpnum1" placeholder="Min">
+    </div>
+</div>
+</div>
+<ul id="addedevent">
+
+</ul>
+<div id="body"></div>
+
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/latestcompiled.min.js"></script>
+</body>
+</html>
+<script>
+    let inpNum1 = document.getElementById('inpnum1')
+    let inpNum2 = document.getElementById('inpnum2')
+
+    
+    let date = new Date();
+        console.log(date.getMinutes());
+
+    
+    function addevent() {
+
+        let lol = document.getElementById('event');
+        addedevent.innerHTML+=`<li class="addedEvents"> ${lol.value} <span id="shownum2">${inpNum2.value}</span>:<span id="shownum1">${inpNum1.value}</span></li>`
+        console.log(lol.value);
+        setTime()
+    }
+    function setTime(){
+        // shownum2.innerHTML = Number(inpnum2.value);
+        // shownum1.innerHTML = Number(inpnum1.value);
+        
+        if (inpnum1.value==date.getMinutes() && inpnum2.value==date.getHours()) {
+            alarmAlert()
+        }
+    }
+    function alarmAlert() {
+            body.innerHTML= `
+            <div class="bodycover">
+        
+        <div class="EventDisplay">
+            <h3>${date.getHours()}:${date.getMinutes()} : It's time to Sleep !!!</h3>
+            <button class="btn btn-danger " onclick='Exit()'>Okay</button>
+        </div>
+    
+        </div>
+    
+            `
+        }
+        function Exit(){
+            body.innerHTML=""
+            pauseMyAdio()
+        }
+    function theEvent(){
+        addevent()
+        // setTime()0
+    }
+
+</script>
